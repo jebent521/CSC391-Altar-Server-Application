@@ -34,20 +34,138 @@ Required Elements:
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Altar Server Application</title>
 </head>
+
 <body>
-<main>
-    <h1>Altar Server Applications</h1>
-    <form>
-        <label>
-            Enter your name:
-            <input type="text">
-        </label>
-    </form>
-</main>
+    <main>
+        <h1>Altar Server Applications</h1>
+        <form>
+            <fieldset>
+                <legend>Please enter your information</legend>
+                <label>
+                    Enter your name:
+                    <input type="text">
+                </label>
+                <br>
+                <label>
+                    Enter your email:
+                    <input type="email">
+                </label>
+                <br>
+                <label>
+                    Enter your phone number:
+                    <input type="tel">
+                </label>
+                <br>
+                <label>
+                    Enter your academic year:
+                    <select>
+                        <option>--Please choose an option--</option>
+                        <option>Freshman</option>
+                        <option>Sophomore</option>
+                        <option>Junior</option>
+                        <option>Senior</option>
+                        <option>Super senior</option>
+                    </select>
+                </label>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Please describe your altar serving experience</legend>
+                <label>
+                    Have you ever served?
+                    <select>
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Have you ever served at Franciscan University?
+                    <select>
+                        <option>No</option>
+                        <option>Yes</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Have you ever served the Traditional Latin Mass?
+                    <select>
+                        <option>No</option>
+                        <option>Yes</option>
+                        <option>No, but I would like to learn</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    Have you ever served for other rites?
+                    <select>
+                        <option>No</option>
+                        <option>Yes</option>
+                        <option>No, but I would like to learn</option>
+                    </select>
+                </label>
+                <br>
+                <label>
+                    (If applicable) please specify any other rites for which you've served.
+                    <br>
+                    <textarea></textarea>
+                </label>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Choose your availability</legend>
+                <p>Please keep in mind that you must arrive at least 15 minutes before Mass starts on Monday through Saturday and 30 minutes before Mass starts on Sundays.</p>
+                <input type="checkbox" /> <label>Monday 6:30 AM</label> <br>
+                <input type="checkbox" /> <label>Monday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Monday 12:05 PM</label> <br>
+                <input type="checkbox" /> <label>Monday 4:45 PM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Tuesday 6:30 AM</label> <br>
+                <input type="checkbox" /> <label>Tuesday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Tuesday 12:05 PM</label> <br>
+                <input type="checkbox" /> <label>Tuesday 4:45 PM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Wednesday 6:30 AM</label> <br>
+                <input type="checkbox" /> <label>Wednesday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Wednesday 12:05 PM</label> <br>
+                <input type="checkbox" /> <label>Wednesday 4:45 PM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Thursday 6:30 AM</label> <br>
+                <input type="checkbox" /> <label>Thursday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Thursday 12:05 PM</label> <br>
+                <input type="checkbox" /> <label>Thursday 4:45 PM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Friday 6:30 AM</label> <br>
+                <input type="checkbox" /> <label>Friday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Friday 12:05 PM</label> <br>
+                <input type="checkbox" /> <label>Friday 4:45 PM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Saturday 11:00 AM</label> <br>
+                <br>
+                <input type="checkbox" /> <label>Sunday 8:00 AM</label> <br>
+                <input type="checkbox" /> <label>Sunday 10:00 AM</label> <br>
+                <input type="checkbox" /> <label>Sunday 12:00 PM</label> <br>
+                <input type="checkbox" /> <label>Sunday 4:00 PM</label> <br>
+                <input type="checkbox" /> <label>Sunday 8:00 PM</label> <br>
+            </fieldset>
+            <br>
+            <label>
+                Any additional questions, comments, or concerns??
+                <br>
+                <textarea></textarea>
+            </label>
+            <br>
+            <button>Submit</button>
+        </form>
+    </main>
 
 </body>
+
 </html>
