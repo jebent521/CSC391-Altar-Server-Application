@@ -1,0 +1,221 @@
+<!--
+Altar Server Application Form
+- structured sections
+- required fields
+- grouped information
+- users would eventually expect validation, feedback,
+    and saved state
+
+Your webpage must include all the functional elements listed
+for your team in the Team Requirements section below.
+
+Your webpage must be well-structured and use semantic HTML5
+tags appropriately
+
+TEAM 3 — FORMS AND INPUTS
+HTML Tags:
+- <form>
+- <input>
+- <textarea>
+- <button>
+- <select>
+- <option>
+- <label>
+- <fieldset>
+- <legend>
+
+Required Elements:
+- Text inputs for name, email, and phone number
+- A <select> dropdown for event type selection
+- A <textarea> for special requests or comments
+- A <fieldset> with a <legend> to group related
+    fields (e.g., Contact Information)
+- A <button> to submit the form 
+    
+-ADD
+    Team 1 - Sectioning and Structure
+    HTML Tags:
+    - <header>
+    - <nav>
+    - <main>
+    - <article>
+    - <aside>
+    - <footer>
+    - <section>
+    - <h1>-<h6>
+
+    Team 4 - Multimedia and embedded content
+    HTML Tags:
+    - <img>
+    - <audio>
+    - <video>
+    - <source>
+    - <iframe>
+    - <embed>
+    - <canvas>
+    - <svg>
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Altar Server Application</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/franny_logo.png" alt="FUS Logo" style="max-width: 60%">
+            <nav>
+                <menu>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="gallery.html"> Gallery</a></li>
+                    <li><a href="#contact"> Contact us</a></li>
+                </menu>
+            </nav>
+        </div>
+
+        <h1>
+            Altar Server Applications
+        </h1>
+    </header>
+
+    <main>
+        <article>
+            <form>
+                <fieldset>
+                    <legend><h4>Please enter your information</h4></legend>
+                    <label>
+                        Enter your name:
+                        <input type="text">
+                    </label>
+                    <br>
+                    <label>
+                        Enter your email:
+                        <input type="email">
+                    </label>
+                    <br>
+                    <label>
+                        Enter your phone number:
+                        <input type="tel">
+                    </label>
+                    <br>
+                    <label>
+                        Enter your academic year:
+                        <select>
+                            <option>--Please choose an option--</option>
+                            <option>Freshman</option>
+                            <option>Sophomore</option>
+                            <option>Junior</option>
+                            <option>Senior</option>
+                            <option>Super senior</option>
+                        </select>
+                    </label>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><h4>Please describe your altar serving experience</h4></legend>
+                    <label>
+                        Have you ever served?
+                        <select>
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        Have you ever served at Franciscan University?
+                        <select>
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        Have you ever served the Traditional Latin Mass?
+                        <select>
+                            <option>No</option>
+                            <option>Yes</option>
+                            <option>No, but I would like to learn</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        Have you ever served for other rites?
+                        <select>
+                            <option>No</option>
+                            <option>Yes</option>
+                            <option>No, but I would like to learn</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        (If applicable) please specify any other rites for which you've served.
+                        <br>
+                        <textarea></textarea>
+                    </label>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><h4>Choose your availability</h4></legend>
+                    <p>Please keep in mind that you must arrive at least 15 minutes before Mass starts on Monday through Saturday and 30 minutes before Mass starts on Sundays.</p>
+                    <label><input type="checkbox" /> Monday 6:30 AM</label> <br>
+                    <label><input type="checkbox" /> Monday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Monday 12:05 PM</label> <br>
+                    <label><input type="checkbox" /> Monday 4:45 PM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Tuesday 6:30 AM</label> <br>
+                    <label><input type="checkbox" /> Tuesday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Tuesday 12:05 PM</label> <br>
+                    <label><input type="checkbox" /> Tuesday 4:45 PM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Wednesday 6:30 AM</label> <br>
+                    <label><input type="checkbox" /> Wednesday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Wednesday 12:05 PM</label> <br>
+                    <label><input type="checkbox" /> Wednesday 4:45 PM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Thursday 6:30 AM</label> <br>
+                    <label><input type="checkbox" /> Thursday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Thursday 12:05 PM</label> <br>
+                    <label><input type="checkbox" /> Thursday 4:45 PM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Friday 6:30 AM</label> <br>
+                    <label><input type="checkbox" /> Friday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Friday 12:05 PM</label> <br>
+                    <label><input type="checkbox" /> Friday 4:45 PM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Saturday 11:00 AM</label> <br>
+                    <br>
+                    <label><input type="checkbox" /> Sunday 8:00 AM</label> <br>
+                    <label><input type="checkbox" /> Sunday 10:00 AM</label> <br>
+                    <label><input type="checkbox" /> Sunday 12:00 PM</label> <br>
+                    <label><input type="checkbox" /> Sunday 4:00 PM</label> <br>
+                    <label><input type="checkbox" /> Sunday 8:00 PM</label> <br>
+                </fieldset>
+                <br>
+                <label>
+                    Any additional questions, comments, or concerns??
+                    <br>
+                    <textarea></textarea>
+                </label>
+                <br>
+                <button>Submit</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <h4 id="contact">Contact us:</h4>
+        <ul>
+            <li>Phone: <a href="tel:+12345689101">1-234-568-9101</a></li>
+            <li>E-mail: <a href="mailto:probably.not.ctk@franciscan.edu">probably.not.ctk@franciscan.edu</a></li>
+        </ul>
+        <p>&copy; CSC391 Team 3, 2026</p>
+    </footer>
+</body>
+
+</html>
