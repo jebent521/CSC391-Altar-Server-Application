@@ -1,1 +1,4 @@
 .page-title { font-style: italic;}
+
+.nav-menu { border: 1px solid gray; display: flex; gap:7px; margin-bottom: 1px; padding:10px; background-color: aliceblue;}
+.nav-menu :hover {background-color: lightgray; box-shadow: 2px 2px 5px gray; }
