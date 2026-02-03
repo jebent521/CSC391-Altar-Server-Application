@@ -104,3 +104,9 @@ footer {
 footer a {
     color: #cab15d;
 }
+
+.form-box{
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 5px grey;
+}
