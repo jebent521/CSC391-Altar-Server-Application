@@ -47,6 +47,7 @@ header {
     margin-bottom: 1px;
     padding: 10px;
     color: #cab15d;
+    list-style-type: none;
 }
 
 .nav-menu a {
