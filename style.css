@@ -40,7 +40,7 @@ header {
 
 .nav-menu {
     background-color: #002f12;
-    box-shadow: 5px, 5px, 5px, 5px, gold;
+    box-shadow: 5px 5px 5px 5px gold;
     border: 1px solid #cab15d;
     display: flex;
     gap: 7px;
