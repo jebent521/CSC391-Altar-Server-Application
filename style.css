@@ -103,6 +103,25 @@ form {
     padding: 1rem;
 }
 
+.submit-button {
+    background-color: #002f12;
+    border: 0;
+    padding: 1rem 2rem;
+    font-family: "Uncial Antiqua", serif;
+    font-size: large;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 2px 6px #cab15d;
+}
+
+.submit-button:hover {
+    background-color: #00461b;
+}
+
+.submit-button:active {
+    box-shadow: 0 2px #cab15d;
+}
+
 /* || FOOTER */
 
 footer {
