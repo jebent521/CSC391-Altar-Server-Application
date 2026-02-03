@@ -17,6 +17,10 @@ h3 {
     font-weight: 400;
 }
 
+p {
+    line-height: 1.5;
+}
+
 .row {
     display: flex;
     justify-content: space-around;
@@ -27,6 +31,7 @@ h3 {
 header {
     padding: 0.5rem 15%;
     background-color: #00461b;
+    box-shadow: 0 1px 5px 1px;
 }
 
 .logo {
@@ -84,12 +89,16 @@ blockquote .citation {
     text-align: right;
 }
 
+/* || FORM  */
+
 /* || FOOTER */
 
 footer {
+    margin-top: 1rem;
     padding: 0.5rem 15%;
     background-color: #00461b;
     color: white;
+    box-shadow: 0 -1px 5px 1px black;
 }
 
 footer a {
