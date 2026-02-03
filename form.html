@@ -58,9 +58,9 @@ Required Elements:
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
 
-<head>
+<head></head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Altar Server Application</title>
 </head>
@@ -68,23 +68,21 @@ Required Elements:
 <body class="body">
     <header>
         <div>
-            <img src="images/franny_logo_enhanced.png" alt="FUS Logo" style="max-width: 60%">
+            <img src="images/fus_logo_white_transparent.png" alt="FUS Logo" class="logo">
             <nav>
                 <menu class="nav-menu">
                     <a href="index.html"> Home</a> |
                     <a href="form.html"> Application</a> |
-                    <a href="gallery.html"> Gallery</a> |
-                    <a href="#contact"> Contact us</a>
+                    <a href="gallery.html"> Gallery</a>
                 </menu>
             </nav>
         </div>
-
+    </header>
+    
+    <main>
         <h1 class="page-title">
             Altar Server Applications
         </h1>
-    </header>
-
-    <main>
         <article>
             <form>
                 <fieldset>
@@ -217,13 +215,18 @@ Required Elements:
         </article>
     </main>
     <footer>
-        <hr>
         <h4 id="contact">Contact us:</h4>
         <ul>
             <li>Phone: <a href="tel:+12345689101">1-234-568-9101</a></li>
             <li>E-mail: <a href="mailto:probably.not.ctk@franciscan.edu">probably.not.ctk@franciscan.edu</a></li>
+            <li>Check out our <a
+                href="https://github.com/jebent521/CSC391-Altar-Server-Application"
+                target="_blank"
+                rel="noopener noreferrer"
+            >GitHub</a> repository!</li>
         </ul>
-        <p>&copy; CSC391 Team 3, 2026</p>
+        <p><i>Some text and images were generated with AI.</i></p>
+        <p>&copy; CSC391 Team 3, Spring 2026</p>
     </footer>
 </body>
 
