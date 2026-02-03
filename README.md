@@ -15,5 +15,6 @@ Team members and roles:
 
 # CSC391 Assignment T03: minCSS
 
-- Adrian Johnson: stylized the nav bar, reviewed PRs
-- Jonah Ebent: consistent colors and theming
+- Adrian Johnson: stylized the nav bar and form, reviewed PRs
+- Jonah Ebent: consistent colors and theming, form styling
+- Dominic Anthony: code cleanup and ensuring civilized code
