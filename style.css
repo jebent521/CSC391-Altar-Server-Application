@@ -1,22 +1,81 @@
-.page-title {
-    font-style: italic;
+/* CSS organization ideas came from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
+/* || GENERAL STYLES */
+
+body {
+    background-color: #fffef3;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+/* || HEADER */
+
+header {
+    background-color: #00461b;
+    padding: 1rem;
+}
+
+.logo {
+    max-width: 60%;
 }
 
 .nav-menu {
-    border: 1px solid gray;
+    border: 1px solid #cab15d;
     display: flex;
     gap: 7px;
     margin-bottom: 1px;
     padding: 10px;
-    background-color: aliceblue;
+    color: #cab15d;
 }
 
 .nav-menu a {
-    color: black;
+    color: #cab15d;
     text-decoration: none;
 }
 
 .nav-menu :hover {
-    background-color: lightgray;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px black;
+}
+
+/* || MAIN CONTENT */
+
+.page-title {
+    font-style: italic;
+}
+
+aside {
+    width: 300px;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px;
+    font-style: italic;
+    color: #392820
+}
+
+blockquote {
+    box-shadow: inset 5px 0 5px -5px;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    font-style: italic;
+    color: #392820
+}
+
+blockquote .citation {
+    text-align: right;
+}
+
+/* || FOOTER */
+
+footer {
+    background-color: #00461b;
+    color: white;
+    padding: 1rem;
+}
+
+footer a {
+    color: #cab15d;
 }
