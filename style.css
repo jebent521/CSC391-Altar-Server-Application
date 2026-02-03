@@ -1,21 +1,32 @@
 /* CSS organization ideas came from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
+
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Uncial+Antiqua&display=swap');
+
 /* || GENERAL STYLES */
 
 body {
     background-color: #fffef3;
+    font-family: "Brawler", serif;
+    margin: 0;
 }
 
 h1,
 h2,
 h3 {
+    font-family: "Uncial Antiqua", serif;
     font-weight: 400;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* || HEADER */
 
 header {
+    padding: 0.5rem 15%;
     background-color: #00461b;
-    padding: 1rem;
 }
 
 .logo {
@@ -23,6 +34,8 @@ header {
 }
 
 .nav-menu {
+    background-color: #002f12;
+    box-shadow: 5px, 5px, 5px, 5px, gold;
     border: 1px solid #cab15d;
     display: flex;
     gap: 7px;
@@ -41,6 +54,9 @@ header {
 }
 
 /* || MAIN CONTENT */
+main {
+    padding: 0 15%;
+}
 
 .page-title {
     font-style: italic;
@@ -71,9 +87,9 @@ blockquote .citation {
 /* || FOOTER */
 
 footer {
+    padding: 0.5rem 15%;
     background-color: #00461b;
     color: white;
-    padding: 1rem;
 }
 
 footer a {
