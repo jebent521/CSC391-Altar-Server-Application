@@ -26,6 +26,12 @@ p {
     justify-content: space-around;
 }
 
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 /* || HEADER */
 
 header {
@@ -90,6 +96,12 @@ blockquote .citation {
 }
 
 /* || FORM  */
+
+form {
+    background-color: white;
+    box-shadow: 0 0 10px 0.5px;
+    padding: 1rem;
+}
 
 /* || FOOTER */
 
