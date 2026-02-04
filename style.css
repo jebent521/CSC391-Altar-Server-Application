@@ -40,13 +40,13 @@ header {
 
 .nav-menu {
     background-color: #002f12;
-    box-shadow: 5px, 5px, 5px, 5px, gold;
     border: 1px solid #cab15d;
     display: flex;
     gap: 7px;
     margin-bottom: 1px;
     padding: 10px;
     color: #cab15d;
+    list-style-type: none;
 }
 
 .nav-menu a {
