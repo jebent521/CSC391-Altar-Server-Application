@@ -105,8 +105,41 @@ footer a {
     color: #cab15d;
 }
 
-.form-box{
+.form-box {
+    padding: 1rem;
     border: 1px solid black;
     box-sizing: border-box;
     box-shadow: 3px 3px 5px grey;
+    background-color: white;
+}
+
+legend {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+}
+
+textarea {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+}
+
+select {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+}
+
+input {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+    background-color: white;
+}
+
+label {
+    font-family: "Brawler", serif;
+    font-weight: 400;
 }
