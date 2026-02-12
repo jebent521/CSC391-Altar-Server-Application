@@ -2,7 +2,15 @@ header{
     padding:20px;
 }
 
+.logo{
+    width:100;
+    height:auto;
+}
+
 body{
     margin:0;
 }
 
+footer{
+    padding:20px;
+}
