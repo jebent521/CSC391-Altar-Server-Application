@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 .cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 1000;
   font-style: normal;
 }
-
-
 
 * {
   padding: 0;
@@ -40,7 +39,7 @@ main {
 
 h1 {
   display: flex;
-   font-family:"Cormorant Garamond", serif;
+  font-family:"Cormorant Garamond", serif;
   font-weight: 100px;
 }
 
