@@ -129,6 +129,14 @@ legend {
   border-radius: 16px;
 }
 
+.wrap {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
 /* ====== FOOTER-SPECIFIC ====== */
 
 footer a,
