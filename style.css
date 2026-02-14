@@ -47,6 +47,9 @@ h1 {
 
 header,
 footer {
+  position:sticky;
+  top:0;
+  z-index:1000;
   padding: 20px;
   background-color: var(--primary);
   flex-grow: 0;
