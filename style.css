@@ -41,11 +41,6 @@ body {
   min-height: 100vh;
 }
 
-::selection {
-  background-color: var(--accent);
-  color: var(--background);
-}
-
 main {
   flex-grow: 1;
 }
