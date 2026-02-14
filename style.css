@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 
 .cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
@@ -26,7 +26,7 @@
 
 body {
   font-family: "Cormorant Garamond", serif;
-  font-weight:1000;
+  font-weight: 1000;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ main {
 
 h1 {
   display: flex;
-  font-family:"Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 100px;
 }
 
@@ -50,7 +50,7 @@ footer {
   padding: 20px;
   background-color: var(--primary);
   flex-grow: 0;
-  box-shadow:0px 2px 8px gray;
+  box-shadow: 0px 2px 8px gray;
 }
 
 /* ====== HEADER-SPECIFIC ====== */
@@ -113,6 +113,20 @@ main {
   border-radius: 20px;
   border: 2px solid #2e3331;
   background: #efefef;
+}
+
+/* ====== FORM ====== */
+
+fieldset {
+  border-radius: 16px;
+  padding: 0.5em;
+}
+
+legend {
+  color: var(--background);
+  background-color: var(--text);
+  padding: 0.25em 0.5em;
+  border-radius: 16px;
 }
 
 /* ====== FOOTER-SPECIFIC ====== */
