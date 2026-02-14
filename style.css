@@ -184,8 +184,10 @@ footer a,
 
 /*=======Gallery Specific =======*/
 .gall-layout {
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  flex-wrap:wrap;
+ 
 }
