@@ -108,6 +108,10 @@ main {
   padding: 1em;
 }
 
+.page-title {
+  padding-bottom: 0.5em;
+}
+
 .index-txt-bck {
   padding: 10px;
   border-radius: 20px;
@@ -144,11 +148,10 @@ footer a,
   color: #efefef;
 }
 
-
 /*=======Gallery Specific =======*/
-.gall-layout{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
+.gall-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
