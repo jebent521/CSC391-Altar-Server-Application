@@ -25,6 +25,7 @@
 /* ====== PAGE STRUCTURE ====== */
 
 body {
+  line-height:25px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 1000;
   margin: 0;
