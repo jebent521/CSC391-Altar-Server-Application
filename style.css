@@ -28,12 +28,10 @@ body {
 
 main {
   flex-grow: 1;
-  padding: 2em 15%;
 }
 
 h1 {
   display: flex;
-  padding: 20px;
   font-family: "Times New Roman", serif;
   font-weight: 100px;
 }
@@ -97,29 +95,18 @@ header div {
 
 /* ====== MAIN CONTENT ====== */
 
+main {
+  margin: 0 10%;
+  padding: 1em;
+}
+
 .index-txt-bck {
   padding: 10px;
   border-radius: 20px;
-  border:
-    2px,
-    solid #2e3331;
+  border: 2px solid #2e3331;
   background: #efefef;
   font-weight: 600px;
   font-family: "Times New Roman", serif;
-}
-
-aside {
-  display: flex;
-  padding: 20px;
-}
-
-aside iframe {
-  flex-grow: 5;
-  border: 4px solid var(--primary);
-}
-
-aside p {
-  flex-grow: 1;
 }
 
 /* ====== FOOTER-SPECIFIC ====== */
