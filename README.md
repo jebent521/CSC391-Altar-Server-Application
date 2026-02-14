@@ -18,3 +18,8 @@ Team members and roles:
 - Adrian Johnson: stylized the nav bar and form, reviewed PRs
 - Jonah Ebent: consistent colors and theming, form styling
 - Dominic Anthony: code cleanup and ensuring civilized code
+
+# CSC391 Assignment T04: CSS
+
+- Adrian Johnson: coloring and layout
+- Jonah Ebent: form styling and buttons
