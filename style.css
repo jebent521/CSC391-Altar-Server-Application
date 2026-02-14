@@ -143,3 +143,12 @@ footer a,
 .footer-txt {
   color: #efefef;
 }
+
+
+/*=======Gallery Specific =======*/
+.gall-layout{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
