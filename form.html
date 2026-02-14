@@ -74,9 +74,9 @@ Required Elements:
         />
         <nav>
           <ul class="nav-menu">
-            <li><a href="index.html"> Home</a> |</li>
-            <li><a href="form.html"> Application</a> |</li>
-            <li><a href="gallery.html"> Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="selected"><a href="form.html">Application</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </nav>
       </div>
@@ -90,81 +90,86 @@ Required Elements:
             <legend>
               <h4>Please enter your information</h4>
             </legend>
-            <label>
-              Enter your name:
-              <input type="text" />
-            </label>
-            <br />
+
+            <div>
+              <label for="name"> Enter your name: </label>
+              <input type="text" id="name" />
+            </div>
+
             <label>
               Enter your email:
               <input type="email" />
             </label>
-            <br />
-            <label>
-              Enter your phone number:
-              <input type="tel" />
-            </label>
-            <br />
-            <label>
-              Enter your academic year:
-              <select>
+
+            <div>
+              <label for="phone"> Enter your phone number: </label>
+              <input type="tel" id="phone" />
+            </div>
+
+            <div>
+              <label for="year"> Enter your academic year: </label>
+              <select id="year">
                 <option>--Please choose an option--</option>
-                <option>Freshman</option>
-                <option>Sophomore</option>
-                <option>Junior</option>
-                <option>Senior</option>
-                <option>Super senior</option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="super-senior">Super senior</option>
               </select>
-            </label>
-            <br />
+            </div>
           </fieldset>
-          <br />
+
           <fieldset>
             <legend>
               <h4>Please describe your altar serving experience</h4>
             </legend>
-            <label>
-              Have you ever served?
-              <select>
-                <option>No</option>
-                <option>Yes</option>
+            <div>
+              <label for="prior-serving"> Have you ever served? </label>
+              <select id="prior-serving">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
               </select>
-            </label>
-            <br />
-            <label>
-              Have you ever served at Franciscan University?
-              <select>
-                <option>No</option>
-                <option>Yes</option>
+            </div>
+
+            <div>
+              <label for="prior-serving-fus">
+                Have you ever served at Franciscan University?
+              </label>
+              <select id="prior-serving-fus">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
               </select>
-            </label>
-            <br />
-            <label>
-              Have you ever served the Traditional Latin Mass?
-              <select>
-                <option>No</option>
-                <option>Yes</option>
-                <option>No, but I would like to learn</option>
+            </div>
+
+            <div>
+              <label for="prior-serving-tlm">
+                Have you ever served the Traditional Latin Mass?
+              </label>
+              <select id="prior-serving-tlm">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                <option value="learn">No, but I would like to learn</option>
               </select>
-            </label>
-            <br />
-            <label>
-              Have you ever served for other rites?
-              <select>
-                <option>No</option>
-                <option>Yes</option>
-                <option>No, but I would like to learn</option>
+            </div>
+
+            <div>
+              <label for="prior-serving-rites">
+                Have you ever served for other rites?
+              </label>
+              <select id="prior-serving-rites">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                <option value="learn">No, but I would like to learn</option>
               </select>
-            </label>
-            <br />
-            <label>
+            </div>
+
+            <label for="other-rites">
               (If applicable) please specify any other rites for which you've
               served.
-              <br />
-              <textarea></textarea>
             </label>
+            <textarea id="other-rites"></textarea>
           </fieldset>
-          <br />
+
           <fieldset>
             <legend>
               <h4>Choose your availability</h4>
@@ -177,67 +182,173 @@ Required Elements:
             <div class="wrap">
               <div>
                 <p>Monday</p>
-                <label><input type="checkbox" />6:30 AM</label> <br />
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />12:05 PM</label> <br />
-                <label><input type="checkbox" />4:45 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="mo-6" /><label for="mo-6"
+                    >6:30 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="mo-8" /><label for="mo-8"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="mo-12" /><label for="mo-12"
+                    >12:05 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="mo-4" /><label for="mo-4"
+                    >4:45 PM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Tuesday</p>
-                <label><input type="checkbox" />6:30 AM</label> <br />
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />12:05 PM</label> <br />
-                <label><input type="checkbox" />4:45 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="tu-6" /><label for="tu-6"
+                    >6:30 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="tu-8" /><label for="tu-8"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="tu-12" /><label for="tu-12"
+                    >12:05 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="tu-4" /><label for="tu-4"
+                    >4:45 PM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Wednesday</p>
-                <label><input type="checkbox" />6:30 AM</label> <br />
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />12:05 PM</label> <br />
-                <label><input type="checkbox" />4:45 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="we-6" /><label for="we-6"
+                    >6:30 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="we-8" /><label for="we-8"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="we-12" /><label for="we-12"
+                    >12:05 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="we-4" /><label for="we-4"
+                    >4:45 PM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Thursday</p>
-                <label><input type="checkbox" />6:30 AM</label> <br />
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />12:05 PM</label> <br />
-                <label><input type="checkbox" />4:45 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="th-6" /><label for="th-6"
+                    >6:30 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="th-8" /><label for="th-8"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="th-12" /><label for="th-12"
+                    >12:05 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="th-4" /><label for="th-4"
+                    >4:45 PM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Friday</p>
-                <label><input type="checkbox" />6:30 AM</label> <br />
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />12:05 PM</label> <br />
-                <label><input type="checkbox" />4:45 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="fr-6" /><label for="fr-6"
+                    >6:30 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="fr-8" /><label for="fr-8"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="fr-12" /><label for="fr-12"
+                    >12:05 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="fr-4" /><label for="fr-4"
+                    >4:45 PM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Saturday</p>
-                <label><input type="checkbox" />11:00 AM</label> <br />
+                <div>
+                  <input type="checkbox" id="sa-11" /><label for="sa-11"
+                    >11:00 AM</label
+                  >
+                </div>
               </div>
               <div>
                 <p>Sunday</p>
-                <label><input type="checkbox" />8:00 AM</label> <br />
-                <label><input type="checkbox" />10:00 AM</label> <br />
-                <label><input type="checkbox" />12:00 PM</label> <br />
-                <label><input type="checkbox" />4:00 PM</label> <br />
-                <label><input type="checkbox" />8:00 PM</label> <br />
+                <div>
+                  <input type="checkbox" id="su-8a" /><label for="su-8a"
+                    >8:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="su-10" /><label for="su-10"
+                    >10:00 AM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="su-12" /><label for="su-12"
+                    >12:00 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="su-4" /><label for="su-4"
+                    >4:00 PM</label
+                  >
+                </div>
+                <div>
+                  <input type="checkbox" id="su-8p" /><label for="su-8p"
+                    >8:00 PM</label
+                  >
+                </div>
               </div>
             </div>
           </fieldset>
-          <br />
-          <label>
-            Any additional questions, comments, or concerns??
-            <br />
-            <textarea></textarea>
-          </label>
-          <br />
+
+          <div>
+            <label for="additional"
+              >Any additional questions, comments, or concerns?</label
+            >
+            <textarea id="additional"></textarea>
+          </div>
+
           <div class="row"><button class="submit-button">Submit</button></div>
         </form>
       </article>
     </main>
+
     <footer>
-      <h4 id="contact">Contact us:</h4>
-      <ul>
+      <h4 class="footer-txt" id="contact">Contact us:</h4>
+      <ul class="footer-txt">
         <li>Phone: <a href="tel:+12345689101">1-234-568-9101</a></li>
         <li>
           E-mail:
@@ -256,7 +367,9 @@ Required Elements:
           repository!
         </li>
       </ul>
-      <p><i>Some text and images were generated with AI.</i></p>
+      <p class="footer-txt">
+        <i>Some text and images were generated with AI.</i>
+      </p>
       <p>&copy; CSC391 Team 3, Spring 2026</p>
     </footer>
   </body>

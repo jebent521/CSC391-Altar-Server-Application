@@ -17,21 +17,22 @@
 
         <nav>
           <ul class="nav-menu">
-            <li><a href="index.html"> Home</a> |</li>
-            <li><a href="form.html"> Application</a> |</li>
-            <li><a href="gallery.html"> Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Application</a></li>
+            <li class="selected"><a href="gallery.html">Gallery</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <h1 class="page-title">Gallery</h1>
-      <article>
+      <h1 class="gall-layout" class="page-title">Gallery</h1>
+      <article class="gall-layout" >
         <p>
           Here is a selection of media from Christ the King Chapel. This could
           be you!
         </p>
       </article>
+      <div class="gall-layout">
       <div>
         <video controls>
           <source
@@ -54,9 +55,11 @@
             <a href="audio/easter_vigil_prayer.m4a"></a>
           </audio>
         </video>
+        </div>
+        <div class="gall-layout">
         <iframe
-          width="560"
-          height="315"
+          width="640"
+          height="360"
           src="https://www.youtube-nocookie.com/embed/llF2Bw80FM8?si=aWCBMbt-uiUfxai6&amp;start=300"
           title="YouTube video player"
           allow="
@@ -72,17 +75,22 @@
           allowfullscreen
         ></iframe>
       </div>
+      </div>
+      <div class="gall-layout">
       <div class="row">
         <video height="500" controls>
           <source src="videos/Recruiting.mp4" type="video/mp4" />
         </video>
+        </div>
+        <div class="gall-layout">
         <embed type="image/jpg" src="images/chapel.jpg" height="500" />
+      </div>
       </div>
     </main>
 
-    <footer>
-      <h4 id="contact">Contact us:</h4>
-      <ul>
+       <footer>
+      <h4 class="footer-txt" id="contact">Contact us:</h4>
+      <ul class="footer-txt">
         <li>Phone: <a href="tel:+12345689101">1-234-568-9101</a></li>
         <li>
           E-mail:
@@ -101,8 +109,9 @@
           repository!
         </li>
       </ul>
-      <p><i>Some text and images were generated with AI.</i></p>
+      <p class="footer-txt"><i>Some text and images were generated with AI.</i></p>
       <p>&copy; CSC391 Team 3, Spring 2026</p>
     </footer>
+
   </body>
 </html>

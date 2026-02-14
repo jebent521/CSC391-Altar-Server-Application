@@ -1,16 +1,228 @@
-header{
-    padding:20px;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
 }
 
-.logo{
-    width:100;
-    height:auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin:0;
+:root {
+  /* define variables here */
+  --background: #efefef;
+  --primary: #222828;
+  --secondary: #949b96;
+  --accent: #929982;
+  --text: #222828;
 }
 
-footer{
-    padding:20px;
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* ====== PAGE STRUCTURE ====== */
+
+body {
+  line-height: 25px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  display: flex;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100px;
+  text-shadow: 0px 1px 2px var(--primary);
+}
+
+header,
+footer {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+  background-color: var(--primary);
+  flex-grow: 0;
+  box-shadow: 0px 2px 8px gray;
+}
+
+ul {
+  margin-left: 1.5em;
+}
+
+/* ====== HEADER-SPECIFIC ====== */
+
+header a {
+  color: var(--accent);
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+}
+
+.logo {
+  width: 320px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  column-gap: 0.5em;
+}
+
+.nav-menu li {
+  background-color: var(--secondary);
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow:
+    inset 0px 2px 8px -2px white,
+    inset 0px -2px 8px -2px;
+  transition: box-shadow 0.1s;
+}
+
+.nav-menu li:hover,
+.nav-menu .selected {
+  box-shadow:
+    inset 0px 2px 8px -2px,
+    inset 0px -2px 8px -2px white;
+  transition: box-shadow 0.1s;
+}
+
+.nav-menu li a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* ====== MAIN CONTENT ====== */
+
+main {
+  margin: 0 10%;
+  padding: 1em;
+}
+
+.page-title {
+  padding-bottom: 0.5em;
+}
+
+.index-txt-bck {
+  margin: 0.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #2e3331;
+  background: #efefef;
+}
+
+/* ====== FORM ====== */
+
+fieldset {
+  border-radius: 16px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+legend {
+  color: var(--background);
+  background-color: var(--text);
+  padding: 0.25em 0.5em;
+  border-radius: 16px;
+}
+
+.wrap {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  accent-color: var(--accent);
+}
+
+input:focus {
+  background-color: hsl(78, 20%, 85%);
+}
+
+input[type="checkbox"] {
+  width: min-content;
+  margin: 0 2px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+}
+
+select {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+}
+
+.submit-button {
+  background-color: var(--primary);
+  color: var(--background);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  padding: 1rem 2rem;
+  border-radius: 32px;
+  font-size: large;
+  box-shadow:
+    inset 2px 0px 2px 0px white,
+    inset -2px 0px 2px 0px gray;
+  transition: transform 0.1s;
+}
+
+.submit-button:hover {
+  transition: transform 0.1s;
+  transform: scale(0.95, 0.95);
+}
+
+/* ====== FOOTER-SPECIFIC ====== */
+
+footer a,
+.footer-txt {
+  color: #efefef;
+  padding: 2px;
+}
+
+/*=======Gallery Specific =======*/
+.gall-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+blockquote{
+  font-style:italic;
+  padding:2px;
 }
