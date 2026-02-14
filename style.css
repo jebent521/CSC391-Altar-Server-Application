@@ -79,6 +79,7 @@ header div {
   box-shadow:
     inset 0px 2px 8px -2px white,
     inset 0px -2px 8px -2px;
+  transition: box-shadow 0.1s;
 }
 
 .nav-menu li:hover,
@@ -86,6 +87,7 @@ header div {
   box-shadow:
     inset 0px 2px 8px -2px,
     inset 0px -2px 8px -2px white;
+  transition: box-shadow 0.1s;
 }
 
 .nav-menu li a {
