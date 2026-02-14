@@ -47,9 +47,9 @@ h1 {
 
 header,
 footer {
-  position:sticky;
-  top:0;
-  z-index:1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 20px;
   background-color: var(--primary);
   flex-grow: 0;
@@ -127,6 +127,7 @@ main {
 fieldset {
   border-radius: 16px;
   padding: 0.5em;
+  margin: 0.5em 0;
 }
 
 legend {
@@ -142,6 +143,30 @@ legend {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+}
+
+input[type="checkbox"] {
+  width: min-content;
+  margin: 0 2px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+}
+
+select {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
 }
 
 /* ====== FOOTER-SPECIFIC ====== */
