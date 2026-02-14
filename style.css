@@ -25,7 +25,7 @@
 /* ====== PAGE STRUCTURE ====== */
 
 body {
-  line-height:25px;
+  line-height: 25px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 1000;
   margin: 0;
@@ -151,6 +151,11 @@ input {
   padding: 0.5em 0.5em;
   font-family: "Cormorant Garamond", serif;
   font-weight: 1000;
+  accent-color: var(--accent);
+}
+
+input:focus {
+  background-color: hsl(78, 20%, 85%);
 }
 
 input[type="checkbox"] {
