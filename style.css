@@ -22,6 +22,11 @@
   --text: #222828;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+}
+
 /* ====== PAGE STRUCTURE ====== */
 
 body {
@@ -175,6 +180,25 @@ select {
   font-weight: 1000;
 }
 
+.submit-button {
+  background-color: var(--primary);
+  color: var(--background);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  padding: 1rem 2rem;
+  border-radius: 32px;
+  font-size: large;
+  box-shadow:
+    inset 2px 0px 2px 0px white,
+    inset -2px 0px 2px 0px gray;
+  transition: transform 0.1s;
+}
+
+.submit-button:hover {
+  transition: transform 0.1s;
+  transform: scale(0.95, 0.95);
+}
+
 /* ====== FOOTER-SPECIFIC ====== */
 
 footer a,
@@ -184,10 +208,9 @@ footer a,
 
 /*=======Gallery Specific =======*/
 .gall-layout {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  flex-wrap:wrap;
- 
+  flex-wrap: wrap;
 }
