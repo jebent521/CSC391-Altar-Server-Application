@@ -1,4 +1,12 @@
-/* https://coolors.co/514b23-656839-cbc9ad-cbd0b9-bddbd0 */
+
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 
 * {
   padding: 0;
@@ -32,7 +40,7 @@ main {
 
 h1 {
   display: flex;
-  font-family: "Times New Roman", serif;
+   font-family:"Cormorant Garamond", serif;
   font-weight: 100px;
 }
 
@@ -41,10 +49,7 @@ footer {
   padding: 20px;
   background-color: var(--primary);
   flex-grow: 0;
-  box-shadow:
-    0px,
-    2px,
-    30px gray;
+  box-shadow:0px 2px 8px gray;
 }
 
 /* ====== HEADER-SPECIFIC ====== */
@@ -106,7 +111,7 @@ main {
   border: 2px solid #2e3331;
   background: #efefef;
   font-weight: 600px;
-  font-family: "Times New Roman", serif;
+  font-family:"Cormorant Garamond", serif;
 }
 
 /* ====== FOOTER-SPECIFIC ====== */
