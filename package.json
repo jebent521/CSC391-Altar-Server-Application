@@ -3,6 +3,10 @@
     "bootstrap": "^5.3.8"
   },
   "devDependencies": {
+    "prettier": "^3.8.1",
     "sass": "^1.97.3"
+  },
+  "scripts": {
+    "fmt": "npx prettier -w **/*.html"
   }
 }
