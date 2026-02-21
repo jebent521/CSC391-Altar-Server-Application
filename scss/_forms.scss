@@ -1,85 +1,81 @@
-form {
-  background-color: white;
-  box-shadow: 0 0 10px 0.5px;
-  padding: 1rem;
-}
+// form {
+//   background-color: white;
+//   box-shadow: 0 0 10px 0.5px;
+//   padding: 1rem;
+// }
 
-.submit-button {
-  background-color: $secondary;
-  border: 0;
-  padding: 1rem 2rem;
-  font-family: "Uncial Antiqua", serif;
-  font-size: large;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 2px 6px #cab15d;
-}
+// .submit-button {
+//   background-color: $secondary;
+//   border: 0;
+//   padding: 1rem 2rem;
+//   font-family: "Uncial Antiqua", serif;
+//   font-size: large;
+//   color: white;
+//   border-radius: 8px;
+//   box-shadow: 2px 6px #cab15d;
+// }
 
-.submit-button:hover {
-  background-color: $primary;
-}
+// .submit-button:hover {
+//   background-color: $primary;
+// }
 
-.submit-button:active {
-  box-shadow: 0 2px #cab15d;
-}
+// .submit-button:active {
+//   box-shadow: 0 2px #cab15d;
+// }
 
-fieldset {
-  border-radius: 16px;
-  padding: 0.5em;
-  margin: 0.5em 0;
-}
+// fieldset {
+//   border-radius: 16px;
+//   padding: 0.5em;
+//   margin: 0.5em 0;
+// }
 
-legend {
-  color: var(--background);
-  background-color: var(--text);
-  padding: 0.25em 0.5em;
-  border-radius: 16px;
-}
+// legend {
+//   color: var(--background);
+//   background-color: var(--text);
+//   padding: 0.25em 0.5em;
+//   border-radius: 16px;
+// }
 
-input {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 1000;
-  accent-color: var(--accent);
-}
+// input {
+//   width: 100%;
+//   padding: 0.5em 0.5em;
+//   font-weight: 1000;
+//   accent-color: $accent;
+// }
 
-input:focus {
-  background-color: hsl(78, 20%, 85%);
-}
+// input:focus {
+//   background-color: #dce0d1;
+// }
 
-input[type="checkbox"] {
-  width: min-content;
-  margin: 0 2px;
-}
+// input[type="checkbox"] {
+//   width: min-content;
+//   margin: 0 2px;
+// }
 
-textarea {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 1000;
-}
+// textarea {
+//   width: 100%;
+//   padding: 0.5em 0.5em;
+//   font-weight: 1000;
+// }
 
-select {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 1000;
-}
+// select {
+//   font-weight: 1000;
+// }
 
-.submit-button {
-  background-color: var(--primary);
-  color: var(--background);
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 1000;
-  padding: 1rem 2rem;
-  border-radius: 32px;
-  font-size: large;
-  box-shadow:
-    inset 2px 0px 2px 0px white,
-    inset -2px 0px 2px 0px gray;
-  transition: transform 0.1s;
-}
+// .submit-button {
+//   background-color: var(--primary);
+//   color: var(--background);
+//   font-weight: 1000;
+//   padding: 1rem 2rem;
+//   border-radius: 32px;
+//   font-size: large;
+//   box-shadow:
+//     inset 2px 0px 2px 0px white,
+//     inset -2px 0px 2px 0px gray;
+//   transition: transform 0.1s;
+// }
 
-.submit-button:hover {
-  transition: transform 0.1s;
-  transform: scale(0.95, 0.95);
-}
+// .submit-button:hover {
+//   transition: transform 0.1s;
+//   transform: scale(0.95, 0.95);
+// }
