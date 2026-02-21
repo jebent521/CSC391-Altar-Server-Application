@@ -1,8 +1,16 @@
 /* CSS organization ideas came from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
 
+// || COLOR OVERRIDES
+
+$primary: #00461b;
+$secondary: #002f12;
+
+@use '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Uncial+Antiqua&display=swap');
 
-/* || GENERAL STYLES */
+
+
+// || GENERAL STYLES
 
 body {
   background-color: #fffef3;
@@ -21,11 +29,6 @@ p {
   line-height: 1.5;
 }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-}
-
 .wrap {
   display: flex;
   justify-content: space-around;
@@ -36,7 +39,7 @@ p {
 
 header {
   padding: 0.5rem 15%;
-  background-color: #00461b;
+  background-color: $primary;
   box-shadow: 0 1px 5px 1px;
 }
 
@@ -45,7 +48,7 @@ header {
 }
 
 .nav-menu {
-  background-color: #002f12;
+  background-color: $primary;
   border: 1px solid #cab15d;
   display: flex;
   gap: 7px;
@@ -95,39 +98,12 @@ blockquote .citation {
   text-align: right;
 }
 
-/* || FORM  */
-
-form {
-  background-color: white;
-  box-shadow: 0 0 10px 0.5px;
-  padding: 1rem;
-}
-
-.submit-button {
-  background-color: #002f12;
-  border: 0;
-  padding: 1rem 2rem;
-  font-family: "Uncial Antiqua", serif;
-  font-size: large;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 2px 6px #cab15d;
-}
-
-.submit-button:hover {
-  background-color: #00461b;
-}
-
-.submit-button:active {
-  box-shadow: 0 2px #cab15d;
-}
-
 /* || FOOTER */
 
 footer {
   margin-top: 1rem;
   padding: 0.5rem 15%;
-  background-color: #00461b;
+  background-color: $primary;
   color: white;
   box-shadow: 0 -1px 5px 1px black;
 }

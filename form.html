@@ -1,67 +1,10 @@
-<!--
-Altar Server Application Form
-- structured sections
-- required fields
-- grouped information
-- users would eventually expect validation, feedback,
-    and saved state
-
-Your webpage must include all the functional elements listed
-for your team in the Team Requirements section below.
-
-Your webpage must be well-structured and use semantic HTML5
-tags appropriately
-
-TEAM 3 — FORMS AND INPUTS
-HTML Tags:
-- <form>
-- <input>
-- <textarea>
-- <button>
-- <select>
-- <option>
-- <label>
-- <fieldset>
-- <legend>
-
-Required Elements:
-- Text inputs for name, email, and phone number
-- A <select> dropdown for event type selection
-- A <textarea> for special requests or comments
-- A <fieldset> with a <legend> to group related
-    fields (e.g., Contact Information)
-- A <button> to submit the form 
-    
--ADD
-    Team 1 - Sectioning and Structure
-    HTML Tags:
-    - <header>
-    - <nav>
-    - <main>
-    - <article>
-    - <aside>
-    - <footer>
-    - <section>
-    - <h1>-<h6>
-
-    Team 4 - Multimedia and embedded content
-    HTML Tags:
-    - <img>
-    - <audio>
-    - <video>
-    - <source>
-    - <iframe>
-    - <embed>
-    - <canvas>
-    - <svg>
-    -->
-
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/application.css" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Altar Server Application</title>
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
 
   <body>
@@ -341,7 +284,9 @@ Required Elements:
             <textarea id="additional"></textarea>
           </div>
 
-          <div class="row"><button class="submit-button">Submit</button></div>
+          <div class="text-center">
+            <button class="btn btn-primary">Submit</button>
+          </div>
         </form>
       </article>
     </main>
