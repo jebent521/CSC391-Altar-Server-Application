@@ -34,7 +34,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="page-title">Altar Server Applications</h1>
       <article>
         <form>
@@ -43,23 +43,38 @@
               <h4>Please enter your information</h4>
             </legend>
 
-            <div>
-              <label for="name"> Enter your name: </label>
-              <input type="text" id="name" />
+            <div class="mb-3">
+              <label for="name">Enter your name: </label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="John Smith"
+              />
             </div>
 
-            <label>
-              Enter your email:
-              <input type="email" />
-            </label>
-
-            <div>
-              <label for="phone"> Enter your phone number: </label>
-              <input type="tel" id="phone" />
+            <div class="mb-3">
+              <label for="email">Enter your email: </label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="jsmith001@student.franciscan.edu"
+              />
             </div>
 
-            <div>
-              <label for="year"> Enter your academic year: </label>
+            <div class="mb-3">
+              <label for="phone">Enter your phone number: </label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="(123) 456-7890"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="year">Enter your academic year: </label>
               <select id="year">
                 <option>--Please choose an option--</option>
                 <option value="freshman">Freshman</option>
@@ -75,15 +90,15 @@
             <legend>
               <h4>Please describe your altar serving experience</h4>
             </legend>
-            <div>
-              <label for="prior-serving"> Have you ever served? </label>
+            <div class="mb-3">
+              <label for="prior-serving">Have you ever served? </label>
               <select id="prior-serving">
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-fus">
                 Have you ever served at Franciscan University?
               </label>
@@ -93,7 +108,7 @@
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-tlm">
                 Have you ever served the Traditional Latin Mass?
               </label>
@@ -104,7 +119,7 @@
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-rites">
                 Have you ever served for other rites?
               </label>
@@ -115,25 +130,27 @@
               </select>
             </div>
 
-            <label for="other-rites">
-              (If applicable) please specify any other rites for which you've
-              served.
-            </label>
-            <textarea id="other-rites"></textarea>
+            <div class="mb-3">
+              <label for="other-rites">
+                (If applicable) please specify any other rites for which you've
+                served.
+              </label>
+              <textarea id="other-rites"></textarea>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>
               <h4>Choose your availability</h4>
             </legend>
-            <p>
+            <small class="form-text">
               Please keep in mind that you must arrive at least 15 minutes
               before Mass starts on Monday through Saturday and 30 minutes
               before Mass starts on Sundays.
-            </p>
-            <div class="wrap">
-              <div>
-                <p>Monday</p>
+            </small>
+            <div class="row">
+              <div class="col pb-3">
+                <p class="m-0 fw-bold" class="m-0">Monday</p>
                 <div>
                   <input type="checkbox" id="mo-6" /><label for="mo-6"
                     >6:30 AM</label
@@ -155,8 +172,8 @@
                   >
                 </div>
               </div>
-              <div>
-                <p>Tuesday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Tuesday</p>
                 <div>
                   <input type="checkbox" id="tu-6" /><label for="tu-6"
                     >6:30 AM</label
@@ -178,8 +195,8 @@
                   >
                 </div>
               </div>
-              <div>
-                <p>Wednesday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Wednesday</p>
                 <div>
                   <input type="checkbox" id="we-6" /><label for="we-6"
                     >6:30 AM</label
@@ -201,8 +218,8 @@
                   >
                 </div>
               </div>
-              <div>
-                <p>Thursday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Thursday</p>
                 <div>
                   <input type="checkbox" id="th-6" /><label for="th-6"
                     >6:30 AM</label
@@ -224,8 +241,8 @@
                   >
                 </div>
               </div>
-              <div>
-                <p>Friday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Friday</p>
                 <div>
                   <input type="checkbox" id="fr-6" /><label for="fr-6"
                     >6:30 AM</label
@@ -247,16 +264,16 @@
                   >
                 </div>
               </div>
-              <div>
-                <p>Saturday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Saturday</p>
                 <div>
                   <input type="checkbox" id="sa-11" /><label for="sa-11"
                     >11:00 AM</label
                   >
                 </div>
               </div>
-              <div>
-                <p>Sunday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Sunday</p>
                 <div>
                   <input type="checkbox" id="su-8a" /><label for="su-8a"
                     >8:00 AM</label
@@ -294,7 +311,9 @@
           </div>
 
           <div class="text-center">
-            <button class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">
+              <h6 class="pt-2 px-2">Submit</h6>
+            </button>
           </div>
         </form>
       </article>
