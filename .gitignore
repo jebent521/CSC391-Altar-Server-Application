@@ -1,6 +1,8 @@
 .idea
 .vscode
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+bun.lock*
 node_modules
-
-/css/*.css
-/css/*.css.map
