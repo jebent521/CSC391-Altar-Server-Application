@@ -1,67 +1,10 @@
-<!--
-Altar Server Application Form
-- structured sections
-- required fields
-- grouped information
-- users would eventually expect validation, feedback,
-    and saved state
-
-Your webpage must include all the functional elements listed
-for your team in the Team Requirements section below.
-
-Your webpage must be well-structured and use semantic HTML5
-tags appropriately
-
-TEAM 3 — FORMS AND INPUTS
-HTML Tags:
-- <form>
-- <input>
-- <textarea>
-- <button>
-- <select>
-- <option>
-- <label>
-- <fieldset>
-- <legend>
-
-Required Elements:
-- Text inputs for name, email, and phone number
-- A <select> dropdown for event type selection
-- A <textarea> for special requests or comments
-- A <fieldset> with a <legend> to group related
-    fields (e.g., Contact Information)
-- A <button> to submit the form 
-    
--ADD
-    Team 1 - Sectioning and Structure
-    HTML Tags:
-    - <header>
-    - <nav>
-    - <main>
-    - <article>
-    - <aside>
-    - <footer>
-    - <section>
-    - <h1>-<h6>
-
-    Team 4 - Multimedia and embedded content
-    HTML Tags:
-    - <img>
-    - <audio>
-    - <video>
-    - <source>
-    - <iframe>
-    - <embed>
-    - <canvas>
-    - <svg>
-    -->
-
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/application.css" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Altar Server Application</title>
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
 
   <body>
@@ -72,17 +15,26 @@ Required Elements:
           alt="FUS Logo"
           class="logo"
         />
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="selected"><a href="form.html">Application</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
+
+        <nav class="navbar navbar-expand-sm bg-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Application</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="page-title">Altar Server Applications</h1>
       <article>
         <form>
@@ -91,23 +43,23 @@ Required Elements:
               <h4>Please enter your information</h4>
             </legend>
 
-            <div>
-              <label for="name"> Enter your name: </label>
-              <input type="text" id="name" />
+            <div class="form-floating mb-3">
+              <input type="text" id="name" class="form-control" />
+              <label for="name">Enter your name</label>
             </div>
 
-            <label>
-              Enter your email:
-              <input type="email" />
-            </label>
-
-            <div>
-              <label for="phone"> Enter your phone number: </label>
-              <input type="tel" id="phone" />
+            <div class="form-floating mb-3">
+              <input type="email" id="email" class="form-control" />
+              <label for="email">Enter your email</label>
             </div>
 
-            <div>
-              <label for="year"> Enter your academic year: </label>
+            <div class="form-floating mb-3">
+              <input type="tel" id="phone" class="form-control" />
+              <label for="phone">Enter your phone number</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="year">Enter your academic year: </label>
               <select id="year">
                 <option>--Please choose an option--</option>
                 <option value="freshman">Freshman</option>
@@ -123,15 +75,15 @@ Required Elements:
             <legend>
               <h4>Please describe your altar serving experience</h4>
             </legend>
-            <div>
-              <label for="prior-serving"> Have you ever served? </label>
+            <div class="mb-3">
+              <label for="prior-serving">Have you ever served? </label>
               <select id="prior-serving">
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-fus">
                 Have you ever served at Franciscan University?
               </label>
@@ -141,7 +93,7 @@ Required Elements:
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-tlm">
                 Have you ever served the Traditional Latin Mass?
               </label>
@@ -152,7 +104,7 @@ Required Elements:
               </select>
             </div>
 
-            <div>
+            <div class="mb-3">
               <label for="prior-serving-rites">
                 Have you ever served for other rites?
               </label>
@@ -163,25 +115,27 @@ Required Elements:
               </select>
             </div>
 
-            <label for="other-rites">
-              (If applicable) please specify any other rites for which you've
-              served.
-            </label>
-            <textarea id="other-rites"></textarea>
+            <div class="mb-3">
+              <label for="other-rites">
+                (If applicable) please specify any other rites for which you've
+                served.
+              </label>
+              <textarea id="other-rites"></textarea>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>
               <h4>Choose your availability</h4>
             </legend>
-            <p>
+            <small class="form-text">
               Please keep in mind that you must arrive at least 15 minutes
               before Mass starts on Monday through Saturday and 30 minutes
               before Mass starts on Sundays.
-            </p>
-            <div class="wrap">
-              <div>
-                <p>Monday</p>
+            </small>
+            <div class="d-flex flex-wrap column-gap-3">
+              <div class="col pb-3">
+                <p class="m-0 fw-bold" class="m-0">Monday</p>
                 <div>
                   <input type="checkbox" id="mo-6" /><label for="mo-6"
                     >6:30 AM</label
@@ -203,8 +157,8 @@ Required Elements:
                   >
                 </div>
               </div>
-              <div>
-                <p>Tuesday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Tuesday</p>
                 <div>
                   <input type="checkbox" id="tu-6" /><label for="tu-6"
                     >6:30 AM</label
@@ -226,8 +180,8 @@ Required Elements:
                   >
                 </div>
               </div>
-              <div>
-                <p>Wednesday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Wednesday</p>
                 <div>
                   <input type="checkbox" id="we-6" /><label for="we-6"
                     >6:30 AM</label
@@ -249,8 +203,8 @@ Required Elements:
                   >
                 </div>
               </div>
-              <div>
-                <p>Thursday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Thursday</p>
                 <div>
                   <input type="checkbox" id="th-6" /><label for="th-6"
                     >6:30 AM</label
@@ -272,8 +226,8 @@ Required Elements:
                   >
                 </div>
               </div>
-              <div>
-                <p>Friday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Friday</p>
                 <div>
                   <input type="checkbox" id="fr-6" /><label for="fr-6"
                     >6:30 AM</label
@@ -295,16 +249,16 @@ Required Elements:
                   >
                 </div>
               </div>
-              <div>
-                <p>Saturday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Saturday</p>
                 <div>
                   <input type="checkbox" id="sa-11" /><label for="sa-11"
                     >11:00 AM</label
                   >
                 </div>
               </div>
-              <div>
-                <p>Sunday</p>
+              <div class="col pb-3">
+                <p class="m-0 fw-bold">Sunday</p>
                 <div>
                   <input type="checkbox" id="su-8a" /><label for="su-8a"
                     >8:00 AM</label
@@ -341,7 +295,11 @@ Required Elements:
             <textarea id="additional"></textarea>
           </div>
 
-          <div class="row"><button class="submit-button">Submit</button></div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+              <h6 class="pt-2 px-2">Submit</h6>
+            </button>
+          </div>
         </form>
       </article>
     </main>

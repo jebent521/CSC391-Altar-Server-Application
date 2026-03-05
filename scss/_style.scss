@@ -1,176 +1,109 @@
-/* CSS organization ideas came from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing */
+// body {
+//   background-color: $background;
+//   margin: 0;
+// }
 
-@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Uncial+Antiqua&display=swap');
+// h1,
+// h2,
+// h3 {
+//   font-weight: 400;
+// }
 
-/* || GENERAL STYLES */
+// p {
+//   line-height: 1.5;
+// }
 
-body {
-  background-color: #fffef3;
-  font-family: "Brawler", serif;
-  margin: 0;
-}
+// .wrap {
+//   display: flex;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+// }
 
-h1,
-h2,
-h3 {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-}
+// /* || HEADER */
 
-p {
-  line-height: 1.5;
-}
+// header {
+//   padding: 0.5rem 15%;
+//   background-color: $primary;
+//   box-shadow: 0 1px 5px 1px;
+// }
 
-.row {
-  display: flex;
-  justify-content: space-around;
-}
+// .logo {
+//   max-width: 60%;
+// }
 
-.wrap {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+// .nav-menu {
+//   background-color: $primary;
+//   border: 1px solid $accent;
+//   display: flex;
+//   gap: 7px;
+//   margin-bottom: 1px;
+//   padding: 10px;
+//   color: $accent;
+//   list-style-type: none;
+// }
 
-/* || HEADER */
+// .nav-menu a {
+//   color: $accent;
+//   text-decoration: none;
+// }
 
-header {
-  padding: 0.5rem 15%;
-  background-color: #00461b;
-  box-shadow: 0 1px 5px 1px;
-}
+// .nav-menu :hover {
+//   box-shadow: 2px 2px 5px black;
+// }
 
-.logo {
-  max-width: 60%;
-}
+// /* || MAIN CONTENT */
+// main {
+//   padding: 0 15%;
+// }
 
-.nav-menu {
-  background-color: #002f12;
-  border: 1px solid #cab15d;
-  display: flex;
-  gap: 7px;
-  margin-bottom: 1px;
-  padding: 10px;
-  color: #cab15d;
-  list-style-type: none;
-}
+// .page-title {
+//   font-style: italic;
+// }
 
-.nav-menu a {
-  color: #cab15d;
-  text-decoration: none;
-}
+// aside {
+//   width: 300px;
+//   padding-left: 0.5rem;
+//   margin-left: 0.5rem;
+//   float: right;
+//   box-shadow: inset 5px 0 5px -5px;
+//   font-style: italic;
+//   color: #392820
+// }
 
-.nav-menu :hover {
-  box-shadow: 2px 2px 5px black;
-}
+// blockquote {
+//   box-shadow: inset 5px 0 5px -5px;
+//   padding-left: 0.5rem;
+//   margin-left: 0.5rem;
+//   font-style: italic;
+//   color: #392820
+// }
 
-/* || MAIN CONTENT */
-main {
-  padding: 0 15%;
-}
+// blockquote .citation {
+//   text-align: right;
+// }
 
-.page-title {
-  font-style: italic;
-}
+// /* || FOOTER */
 
-aside {
-  width: 300px;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
-  float: right;
-  box-shadow: inset 5px 0 5px -5px;
-  font-style: italic;
-  color: #392820
-}
+// footer {
+//   margin-top: 1rem;
+//   padding: 0.5rem 15%;
+//   background-color: $primary;
+//   color: white;
+//   box-shadow: 0 -1px 5px 1px black;
+// }
 
-blockquote {
-  box-shadow: inset 5px 0 5px -5px;
-  padding-left: 0.5rem;
-  margin-left: 0.5rem;
-  font-style: italic;
-  color: #392820
-}
+// footer a {
+//   color: $accent;
+// }
 
-blockquote .citation {
-  text-align: right;
-}
+// .form-box {
+//   padding: 1rem;
+//   border: 1px solid black;
+//   box-sizing: border-box;
+//   box-shadow: 3px 3px 5px grey;
+//   background-color: white;
+// }
 
-/* || FORM  */
-
-form {
-  background-color: white;
-  box-shadow: 0 0 10px 0.5px;
-  padding: 1rem;
-}
-
-.submit-button {
-  background-color: #002f12;
-  border: 0;
-  padding: 1rem 2rem;
-  font-family: "Uncial Antiqua", serif;
-  font-size: large;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 2px 6px #cab15d;
-}
-
-.submit-button:hover {
-  background-color: #00461b;
-}
-
-.submit-button:active {
-  box-shadow: 0 2px #cab15d;
-}
-
-/* || FOOTER */
-
-footer {
-  margin-top: 1rem;
-  padding: 0.5rem 15%;
-  background-color: #00461b;
-  color: white;
-  box-shadow: 0 -1px 5px 1px black;
-}
-
-footer a {
-  color: #cab15d;
-}
-
-.form-box {
-  padding: 1rem;
-  border: 1px solid black;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 5px grey;
-  background-color: white;
-}
-
-legend {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-}
-
-textarea {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-}
-
-select {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-}
-
-input {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-}
-
-button {
-  font-family: "Uncial Antiqua", serif;
-  font-weight: 400;
-  background-color: white;
-}
-
-label {
-  font-family: "Brawler", serif;
-  font-weight: 400;
-}
+// button {
+//   background-color: white;
+// }

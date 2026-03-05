@@ -23,3 +23,11 @@ Team members and roles:
 
 - Adrian Johnson: coloring and layout
 - Jonah Ebent: form styling and buttons
+
+# CSC391 Assignment T05: minBootstrap
+
+![this is fine](https://media1.tenor.com/m/MYZgsN2TDJAAAAAC/this-is.gif)
+
+- Adrian Johnson: navbar styling and utility classes
+- Jonah Ebent: form styling and utility classes
+- Dominic Antony: set up Bootstrap, SCSS, and auto-formatter

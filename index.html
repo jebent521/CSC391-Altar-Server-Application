@@ -1,67 +1,10 @@
-<!--
-Altar Server Application Form
-- structured sections
-- required fields
-- grouped information
-- users would eventually expect validation, feedback,
-    and saved state
-
-Your webpage must include all the functional elements listed
-for your team in the Team Requirements section below.
-
-Your webpage must be well-structured and use semantic HTML5
-tags appropriately
-
-TEAM 3 — FORMS AND INPUTS
-HTML Tags:
-- <form>
-- <input>
-- <textarea>
-- <button>
-- <select>
-- <option>
-- <label>
-- <fieldset>
-- <legend>
-
-Required Elements:
-- Text inputs for name, email, and phone number
-- A <select> dropdown for event type selection
-- A <textarea> for special requests or comments
-- A <fieldset> with a <legend> to group related
-    fields (e.g., Contact Information)
-- A <button> to submit the form 
-    
--ADD
-    Team 1 - Sectioning and Structure
-    HTML Tags:
-    - <header>
-    - <nav>
-    - <main>
-    - <article>
-    - <aside>
-    - <footer>
-    - <section>
-    - <h1>-<h6>
-
-    Team 4 - Multimedia and embedded content
-    HTML Tags:
-    - <img>
-    - <audio>
-    - <video>
-    - <source>
-    - <iframe>
-    - <embed>
-    - <canvas>
-    - <svg>
-    -->
-
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/main.css" />
     <meta charset="UTF-8" />
-    <title>Altar Server Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FUS Altar Server's Guild</title>
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
 
   <body>
@@ -72,12 +15,21 @@ Required Elements:
           alt="FUS Logo"
           class="logo"
         />
-        <nav>
-          <ul class="nav-menu">
-            <li class="selected"><a href="index.html"> Home</a></li>
-            <li><a href="form.html"> Application</a></li>
-            <li><a href="gallery.html"> Gallery</a></li>
-          </ul>
+
+        <nav class="navbar navbar-expand-sm bg-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Application</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -172,7 +124,6 @@ Required Elements:
         </div>
       </article>
     </main>
-
     <footer>
       <h4 class="footer-txt" id="contact">Contact us:</h4>
       <ul class="footer-txt">
