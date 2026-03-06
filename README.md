@@ -58,7 +58,7 @@ Team members and roles:
 - [x] Page must visibly differ from T05 due to SCSS customization.
 - [x] Use structured Bootstrap form components. _JE_
 - [x] Include validation or **floating labels**. _JE_
-- [x] Modify form control variables (border radius, input padding, focus color). _AJ_
-- [x] Demonstrate visible form styling changes via variables. _AJ_
-- [ ] Deploy to `/srv/csc391web/team3/Bootstrap/`
-- [ ] Submit pdf of webpage to Canvas
+- [x] Modify form control variables (border radius, input padding, focus color). _AJ and JE_
+- [x] Demonstrate visible form styling changes via variables. _AJ and JE_
+- [x] Deploy to `/srv/csc391web/team3/Bootstrap/` _AJ and JE_
+- [x] Submit pdf of webpage to Canvas _AJ and JE_
