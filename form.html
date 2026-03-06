@@ -8,21 +8,23 @@
   </head>
 
   <body>
-    <header class="container-fluid bg-primary text-white link-light mb-32">
+    <header class="container-fluid bg-primary text-white link-light mb-3">
       <img
         src="assets/images/fus_logo_white_transparent.png"
         alt="FUS Logo"
-        class="logo"
+        class="mx-4 mt-2"
       />
 
       <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white active" href="index.html">Home</a>
+              <a class="nav-link text-white" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="form.html">Application</a>
+              <a class="nav-link text-white active" href="form.html"
+                >Application</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="gallery.html">Gallery</a>
@@ -32,7 +34,7 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Altar Server Applications</h1>
+      <h1>Altar Server Applications</h1>
       <article>
         <form>
           <fieldset>
@@ -132,7 +134,7 @@
             </small>
             <div class="d-flex flex-wrap column-gap-3">
               <div class="col pb-3">
-                <p class="m-0 fw-bold" class="m-0">Monday</p>
+                <p class="m-0 fw-bold">Monday</p>
                 <div>
                   <input type="checkbox" id="mo-6" /><label for="mo-6"
                     >6:30 AM</label
@@ -301,13 +303,16 @@
       </article>
     </main>
 
-    <footer>
-      <h4 class="footer-txt" id="contact">Contact us:</h4>
-      <ul class="footer-txt">
-        <li>Phone: <a href="tel:+12345689101">1-234-568-9101</a></li>
+    <footer class="bg-primary text-white p-4">
+      <h4 id="contact">Contact us:</h4>
+      <ul>
+        <li>
+          Phone:
+          <a href="tel:+12345689101" class="link-warning">1-234-568-9101</a>
+        </li>
         <li>
           E-mail:
-          <a href="mailto:probably.not.ctk@franciscan.edu"
+          <a href="mailto:probably.not.ctk@franciscan.edu" class="link-warning"
             >probably.not.ctk@franciscan.edu</a
           >
         </li>
@@ -317,12 +322,13 @@
             href="https://github.com/jebent521/CSC391-Altar-Server-Application"
             target="_blank"
             rel="noopener noreferrer"
+            class="link-warning"
             >GitHub</a
           >
           repository!
         </li>
       </ul>
-      <p class="footer-txt">
+      <p>
         <i>Some text and images were generated with AI.</i>
       </p>
       <p>&copy; CSC391 Team 3, Spring 2026</p>

@@ -34,22 +34,30 @@ Team members and roles:
 
 # CSC391 Assignment T06: Bootstrap
 
-**Tasks**
+**Tasks** (Initials in italics denote who completed what)
 
 - [x] Use downloaded Bootstrap files. _DA_
 - [x] Recompile Bootstrap SCSS into a working CSS file. _DA_
 - [x] Move all images, videos, etc. to `assets` folder. _JE_
-- [ ] Modify at least 5 Bootstrap variables in `_variables.scss` that cause
+- [x] Modify at least 5 Bootstrap variables in `_variables.scss` that cause
       visible global changes across multiple components (e.g., `$primary`,
       `$font-size-base`, `$border-radius`, `$body-bg`, `$spacer`,
-      breakpoint/container variables).
-- [ ] Use Bootstrap Grid for layout.
-- [ ] Use at least 5 Bootstrap utility classes.
+      breakpoint/container variables). _JE_
+- [x] Use Bootstrap Grid for layout. _AJ (on gallery)_
+- [x] Use at least 5 Bootstrap utility classes.
+  - [x] `mb-3` _JE_
+  - [x] `text-white` _JE_
+  - [x] `link-light` _JE_
+  - [x] `bg-primary` _JE_
+  - [x] `p-4` _JE_
 - [ ] Use at least 3 Bootstrap components.
+  - [x] `navbar` _AJ_
+  - [x] `btn` _JE_
+  - [ ] TODO
 - [ ] Ensure full responsiveness using Bootstrap breakpoints.
-- [ ] Page must visibly differ from T05 due to SCSS customization.
-- [ ] Use structured Bootstrap form components.
-- [ ] Include validation or floating labels.
+- [x] Page must visibly differ from T05 due to SCSS customization.
+- [x] Use structured Bootstrap form components. _JE_
+- [x] Include validation or **floating labels**. _JE_
 - [ ] Modify form control variables (border radius, input padding, focus color).
 - [ ] Demonstrate visible form styling changes via variables.
 - [ ] Deploy to `/srv/csc391web/team3/Bootstrap/`
