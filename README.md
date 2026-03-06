@@ -31,3 +31,34 @@ Team members and roles:
 - Adrian Johnson: navbar styling and utility classes
 - Jonah Ebent: form styling and utility classes
 - Dominic Antony: set up Bootstrap, SCSS, and auto-formatter
+
+# CSC391 Assignment T06: Bootstrap
+
+**Tasks** (Initials in italics denote who completed what)
+
+- [x] Use downloaded Bootstrap files. _DA_
+- [x] Recompile Bootstrap SCSS into a working CSS file. _DA_
+- [x] Move all images, videos, etc. to `assets` folder. _JE_
+- [x] Modify at least 5 Bootstrap variables in `_variables.scss` that cause
+      visible global changes across multiple components (e.g., `$primary`,
+      `$font-size-base`, `$border-radius`, `$body-bg`, `$spacer`,
+      breakpoint/container variables). _JE_
+- [x] Use Bootstrap Grid for layout. _AJ (on gallery)_
+- [x] Use at least 5 Bootstrap utility classes.
+  - [x] `mb-3` _JE_
+  - [x] `text-white` _JE_
+  - [x] `link-light` _JE_
+  - [x] `bg-primary` _JE_
+  - [x] `p-4` _JE_
+- [x] Use at least 3 Bootstrap components.
+  - [x] `navbar` _AJ_
+  - [x] `btn` _JE_
+  - [x] `carousel` _DA_
+- [x] Ensure full responsiveness using Bootstrap breakpoints. _JE_
+- [x] Page must visibly differ from T05 due to SCSS customization.
+- [x] Use structured Bootstrap form components. _JE_
+- [x] Include validation or **floating labels**. _JE_
+- [x] Modify form control variables (border radius, input padding, focus color). _AJ and JE_
+- [x] Demonstrate visible form styling changes via variables. _AJ and JE_
+- [x] Deploy to `/srv/csc391web/team3/Bootstrap/` _AJ and JE_
+- [x] Submit pdf of webpage to Canvas _AJ and JE_

@@ -2,9 +2,17 @@
 
 $primary: #00461b;
 $secondary: #002f12;
-$accent: #cab15d;
-$background: #fffef3;
+$warning: #cab15d;
+$body-bg: #fffef3;
 
 // FONTS
 
+$font-family-base: "Brawler", sans-serif;
 $headings-font-family: "Uncial Antiqua", serif;
+
+$form-floating-line-height: 300px;
+$input-focus-border-color: $warning;
+$input-border-radius: 16px;
+$input-focus-color: $primary;
+$focus-ring-opacity: 0.25;
+$focus-ring-color: rgba($warning, $focus-ring-opacity);
