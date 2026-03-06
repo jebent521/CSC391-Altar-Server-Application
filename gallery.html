@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CTK Gallery</title>
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
   </head>
 
   <body>
@@ -57,128 +57,46 @@
         </p>
       </article>
 
-      <div id="mediaCarousel" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
+      <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <video controls>
-              <source
-                src="assets/videos/easter_vigil_prayer_highquality.mkv"
-                type="video/mkv"
-              />
-              <source
-                src="assets/videos/easter_vigil_prayer_lowquality.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div
-              class="carousel-caption d-none d-sm-block text-secondary-emphasis"
-            >
-              <h5>Altar servers at the Easter Vigil</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <iframe
-              width="640"
-              height="360"
-              src="https://www.youtube-nocookie.com/embed/llF2Bw80FM8?si=aWCBMbt-uiUfxai6&amp;start=300"
-              title="YouTube video player"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <!--<div
-              class="carousel-caption d-none d-sm-block text-secondary-emphasis"
-            >
-              <h5>Bruschetta with Tomatoes</h5>
-              <p class="d-none d-md-block">
-                Tomatoes aren't disgusting. Even if they taste like water.
-              </p>
-            </div>-->
-          </div>
-          <div class="carousel-item">
-            <video height="500" controls>
-              <source src="assets/videos/Recruiting.mp4" type="video/mp4" />
-            </video>
-            <!--<div
-              class="carousel-caption d-none d-sm-block text-secondary-emphasis"
-            >
-              <h5>Salted Brussels Sprouts</h5>
-              <p class="d-none d-md-block">
-                Oddly enough, these were made nowhere near Brussels.
-              </p>
-            </div>-->
-          </div>
-          <div class="carousel-item">
-            <embed
-              type="image/jpg"
+            <img
               src="assets/images/chapel.jpg"
-              height="500"
+              class="d-block img-fluid mx-auto"
+              alt="CTK Chapel near end of renovations"
             />
-            <div
-              class="carousel-caption d-none d-sm-block text-secondary-emphasis"
-            >
-              <h5>Christ the Teacher Chapel</h5>
-              <p class="d-none d-md-block">
-                CTK Chapel near the end of renovations, and looking more
-                beautiful than ever!
-              </p>
-            </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#mediaCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <video
+              src="assets/videos/easter_vigil_prayer_lowquality.mp4"
+              class="d-block img-fluid mx-auto"
+            ></video>
+          </div>
+          <div class="carousel-item">
+            <video
+              src="assets/videos/Recruiting.mp4"
+              class="d-block img-fluid mx-auto"
+            ></video>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
 
