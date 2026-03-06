@@ -50,11 +50,11 @@ Team members and roles:
   - [x] `link-light` _JE_
   - [x] `bg-primary` _JE_
   - [x] `p-4` _JE_
-- [ ] Use at least 3 Bootstrap components.
+- [x] Use at least 3 Bootstrap components.
   - [x] `navbar` _AJ_
   - [x] `btn` _JE_
-  - [ ] TODO
-- [ ] Ensure full responsiveness using Bootstrap breakpoints.
+  - [x] `carousel` _DA_
+- [x] Ensure full responsiveness using Bootstrap breakpoints. _JE_
 - [x] Page must visibly differ from T05 due to SCSS customization.
 - [x] Use structured Bootstrap form components. _JE_
 - [x] Include validation or **floating labels**. _JE_
