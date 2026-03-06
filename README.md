@@ -31,3 +31,26 @@ Team members and roles:
 - Adrian Johnson: navbar styling and utility classes
 - Jonah Ebent: form styling and utility classes
 - Dominic Antony: set up Bootstrap, SCSS, and auto-formatter
+
+# CSC391 Assignment T06: Bootstrap
+
+**Tasks**
+
+- [x] Use downloaded Bootstrap files. _DA_
+- [x] Recompile Bootstrap SCSS into a working CSS file. _DA_
+- [x] Move all images, videos, etc. to `assets` folder. _JE_
+- [ ] Modify at least 5 Bootstrap variables in `_variables.scss` that cause
+      visible global changes across multiple components (e.g., `$primary`,
+      `$font-size-base`, `$border-radius`, `$body-bg`, `$spacer`,
+      breakpoint/container variables).
+- [ ] Use Bootstrap Grid for layout.
+- [ ] Use at least 5 Bootstrap utility classes.
+- [ ] Use at least 3 Bootstrap components.
+- [ ] Ensure full responsiveness using Bootstrap breakpoints.
+- [ ] Page must visibly differ from T05 due to SCSS customization.
+- [ ] Use structured Bootstrap form components.
+- [ ] Include validation or floating labels.
+- [ ] Modify form control variables (border radius, input padding, focus color).
+- [ ] Demonstrate visible form styling changes via variables.
+- [ ] Deploy to `/srv/csc391web/team3/Bootstrap/`
+- [ ] Submit pdf of webpage to Canvas
