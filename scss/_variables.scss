@@ -10,6 +10,8 @@ $body-bg: #fffef3;
 $font-family-base: "Brawler", sans-serif;
 $headings-font-family: "Uncial Antiqua", serif;
 
-// FORMS
-
-$input-border-radius: 16;
+$form-floating-line-height: 300px;
+$input-focus-border-color: $warning;
+$input-focus-color: $primary;
+$focus-ring-opacity: 0.25;
+$focus-ring-color: rgba($warning, $focus-ring-opacity);
