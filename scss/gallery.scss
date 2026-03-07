@@ -2,6 +2,16 @@
 
 #carouselExample {
   height: 75vh;
+  margin: 5vh;
+}
+
+.carousel-inner {
+  margin: auto;
+}
+
+video, img {
+  max-height: 75vh;
+  max-width: 100%;
 }
 
 .carousel-control-prev {
