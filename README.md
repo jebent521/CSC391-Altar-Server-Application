@@ -95,3 +95,8 @@ Team members and roles:
     - [ ] Why it is used
     - [ ] How it works (with code examples)
   - [ ] At least two live demos from your own page
+
+**Features we added:**
+
+- Form validation
+- Local storage form saving & reloading
