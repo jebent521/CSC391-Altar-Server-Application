@@ -62,3 +62,36 @@ Team members and roles:
 - [x] Demonstrate visible form styling changes via variables. _AJ and JE_
 - [x] Deploy to `/srv/csc391web/team3/Bootstrap/` _AJ and JE_
 - [x] Submit pdf of webpage to Canvas _AJ and JE_
+
+# T07: JavaScript
+
+- Keep all previous HTML, CSS, and Bootstrap work intact.
+- Add JavaScript cleanly and intentionally (no in-line grossness please).
+- Do not break existing layout or styling.
+- Your page must feel meaningfully more interactive than T05/T06.
+
+- [ ] Implement the required JavaScript fundamentals.
+  - [ ] DOM manipulation (add, remove, and modify at least 1 element)
+  - [ ] At least 2 event listeners (click, submit, hover, etc.)
+  - [ ] Fetch and use data from a JSON file
+  - [ ] Use variables, functions, and loops appropriately (at least 2)
+  - [ ] Use local storage where it makes sense
+  - [ ] Maintain clean separation of HTML, CSS, and JS
+- [ ] Implement your assigned team-specific features.
+  - [ ] Validate form inputs using JavaScript
+  - [ ] Display dynamic feedback messages
+  - [ ] Store submitted data in local storage
+  - [ ] Pre-fill form fields on reload
+- [ ] Give a Presentation on your assigned topics
+  - [ ] At least 3 JavaScript topics, including those assigned to your team
+    - DOM manipulation
+    - Event listeners
+    - Fetching JSON data
+    - Local storage
+    - Dynamic content updates
+    - Form validation
+  - [ ] Clear explanation of:
+    - [ ] What the concept is
+    - [ ] Why it is used
+    - [ ] How it works (with code examples)
+  - [ ] At least two live demos from your own page
