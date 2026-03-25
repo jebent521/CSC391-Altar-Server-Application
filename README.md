@@ -70,24 +70,20 @@ Team members and roles:
 - Do not break existing layout or styling.
 - Your page must feel meaningfully more interactive than T05/T06.
 
-- [ ] Implement the required JavaScript fundamentals.
+- [ ] Implement the required JavaScript fundamentals. *Currently assigned: DA, saved applications*
   - [ ] DOM manipulation (add, remove, and modify at least 1 element)
   - [ ] At least 2 event listeners (click, submit, hover, etc.)
   - [ ] Fetch and use data from a JSON file
   - [ ] Use variables, functions, and loops appropriately (at least 2)
   - [ ] Use local storage where it makes sense
   - [ ] Maintain clean separation of HTML, CSS, and JS
-- [ ] Implement your assigned team-specific features.
-  - [ ] Validate form inputs using JavaScript
-  - [ ] Display dynamic feedback messages
-  - [ ] Store submitted data in local storage
-  - [ ] Pre-fill form fields on reload
+- [ ] Implement your assigned team-specific features. *Currently assinged: JE, swear word blocker*
+  - [ ] Validate form inputs using JavaScript.
+  - [ ] Display dynamic feedback messages.
+  - [ ] Store submitted data in local storage.
+  - [ ] Pre-fill form fields on reload. *saved application*
 - [ ] Give a Presentation on your assigned topics
   - [ ] At least 3 JavaScript topics, including those assigned to your team
-    - DOM manipulation
-    - Event listeners
-    - Fetching JSON data
-    - Local storage
     - Dynamic content updates
     - Form validation
   - [ ] Clear explanation of:
