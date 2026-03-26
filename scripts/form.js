@@ -13,17 +13,20 @@ document.getElementById("loadLastBtn").addEventListener("click", (event) => {
   messagebox.innerText = "";
   const formData = JSON.parse(formDataStr);
   for (const [key, value] of Object.entries(formData)) {
-    const input = form.elements[key]
+    const input = form.elements[key];
     switch (input.type) {
-      case 'checkbox': input.checked = !!value; break
-      default: input.value = value;
+      case "checkbox":
+        input.checked = !!value;
+        break;
+      default:
+        input.value = value;
     }
   }
 });
 
 document.getElementById("resetBtn").addEventListener("click", (event) => {
   messagebox.innerText = "";
-  form.reset()
+  form.reset();
 });
 
 /**
@@ -33,8 +36,10 @@ document.getElementById("resetBtn").addEventListener("click", (event) => {
  */
 function isDefault(value, element) {
   switch (element.type) {
-    case "select-one": return value === element[0].value
-    default: return value === element.defaultValue
+    case "select-one":
+      return value === element[0].value;
+    default:
+      return value === element.defaultValue;
   }
 }
 
@@ -46,17 +51,15 @@ form.addEventListener("submit", (event) => {
 
   // Serialize and store to localstorage, if anything changed
   // note: this is only safe if the form does not include uploaded files
-  let holder = {}
-  let wrote = false
+  let holder = {};
+  let wrote = false;
   for (const [key, value] of formData.entries()) {
-    if (!isDefault(value, form.elements[key])){
+    if (!isDefault(value, form.elements[key])) {
       holder[key] = value;
       wrote = true;
     }
   }
-  
-  if (wrote)
-    localStorage.setItem(lastAppKey, JSON.stringify(holder));
-  else
-    messagebox.innerText = "Cannot submit blank form!"
+
+  if (wrote) localStorage.setItem(lastAppKey, JSON.stringify(holder));
+  else messagebox.innerText = "Cannot submit blank form!";
 });
