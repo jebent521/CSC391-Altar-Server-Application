@@ -3,7 +3,7 @@ const lastAppKey = "AltarServerApp/lastApplication";
 const messagebox = document.getElementById("buttonMessage");
 const form = document.getElementById("application");
 
-document.getElementById("loadLastBtn").addEventListener("click", (event) => {
+document.getElementById("loadLastBtn").addEventListener("click", () => {
   const formDataStr = localStorage.getItem(lastAppKey);
   if (formDataStr === null) {
     messagebox.innerText = "No previous application found!";
@@ -12,6 +12,7 @@ document.getElementById("loadLastBtn").addEventListener("click", (event) => {
 
   messagebox.innerText = "";
   const formData = JSON.parse(formDataStr);
+  form.reset()
   for (const [key, value] of Object.entries(formData)) {
     const input = form.elements[key];
     switch (input.type) {
@@ -24,7 +25,7 @@ document.getElementById("loadLastBtn").addEventListener("click", (event) => {
   }
 });
 
-document.getElementById("resetBtn").addEventListener("click", (event) => {
+document.getElementById("resetBtn").addEventListener("click", () => {
   messagebox.innerText = "";
   form.reset();
 });
