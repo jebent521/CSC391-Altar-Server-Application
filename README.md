@@ -70,27 +70,27 @@ Team members and roles:
 - Do not break existing layout or styling.
 - Your page must feel meaningfully more interactive than T05/T06.
 
-- [ ] Implement the required JavaScript fundamentals. *Currently assigned: DA, saved applications*
-  - [X] DOM manipulation (add, remove, and modify at least 1 element)
-  - [X] At least 2 event listeners (click, submit, hover, etc.)
+- [ ] Implement the required JavaScript fundamentals. _Currently assigned: DA, saved applications_
+  - [x] DOM manipulation (add, remove, and modify at least 1 element)
+  - [x] At least 2 event listeners (click, submit, hover, etc.)
   - [ ] Fetch and use data from a JSON file
-  - [X] Use variables, functions, and loops appropriately (at least 2)
-  - [X] Use local storage where it makes sense
-  - [X] Maintain clean separation of HTML, CSS, and JS
-- [ ] Implement your assigned team-specific features. *Currently assigned: JE, swear word blocker*
+  - [x] Use variables, functions, and loops appropriately (at least 2)
+  - [x] Use local storage where it makes sense
+  - [x] Maintain clean separation of HTML, CSS, and JS
+- [ ] Implement your assigned team-specific features. _Currently assigned: JE, swear word blocker_
   - [ ] Validate form inputs using JavaScript.
-  - [X] Display dynamic feedback messages.
-  - [X] Store submitted data in local storage.
-  - [ ] Pre-fill form fields on reload. *saved application*
-- [ ] Give a Presentation on your assigned topics
-  - [ ] At least 3 JavaScript topics, including those assigned to your team
+  - [x] Display dynamic feedback messages.
+  - [x] Store submitted data in local storage.
+  - [x] Pre-fill form fields on reload. _saved application_ _DM_
+- [x] Give a Presentation on your assigned topics _JE_
+  - [x] At least 3 JavaScript topics, including those assigned to your team _JE_
     - Dynamic content updates
     - Form validation
-  - [ ] Clear explanation of:
-    - [ ] What the concept is
-    - [ ] Why it is used
-    - [ ] How it works (with code examples)
-  - [ ] At least two live demos from your own page
+  - [x] Clear explanation of: _JE_
+    - [x] What the concept is _JE_
+    - [x] Why it is used _JE_
+    - [x] How it works (with code examples) _JE_
+  - [x] At least two live demos from your own page _JE_
 
 **Features we added:**
 
