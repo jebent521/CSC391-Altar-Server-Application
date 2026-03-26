@@ -1,7 +1,9 @@
 const secretKey =
   'Dr. Fernanda "Surely did not see that" Psihas\' Secrets (All of them) (Do not leak!)';
-const submitButton = document.getElementById("SUBMIT");
-submitButton.addEventListener("click", (event) => {
+const form = document.getElementById("application");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
   // DO SOMETHING
   let secrets = localStorage.getItem(secretKey);
   if (secrets === null || secrets === undefined) {
