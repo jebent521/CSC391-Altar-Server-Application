@@ -1,32 +1,62 @@
-const secretKey =
-  'Dr. Fernanda "Surely did not see that" Psihas\' Secrets (All of them) (Do not leak!)';
+const lastAppKey = "AltarServerApp/lastApplication";
+
+const messagebox = document.getElementById("buttonMessage");
 const form = document.getElementById("application");
+
+document.getElementById("loadLastBtn").addEventListener("click", (event) => {
+  const formDataStr = localStorage.getItem(lastAppKey);
+  if (formDataStr === null) {
+    messagebox.innerText = "No previous application found!";
+    return;
+  }
+
+  messagebox.innerText = "";
+  const formData = JSON.parse(formDataStr);
+  for (const [key, value] of Object.entries(formData)) {
+    const input = form.elements[key]
+    switch (input.type) {
+      case 'checkbox': input.checked = !!value; break
+      default: input.value = value;
+    }
+  }
+});
+
+document.getElementById("resetBtn").addEventListener("click", (event) => {
+  messagebox.innerText = "";
+  form.reset()
+});
+
+/**
+ * @param value The value to be checked.
+ * @param element The element the value came from.
+ * @return true if the value is the default, false otherwise.
+ */
+function isDefault(value, element) {
+  switch (element.type) {
+    case "select-one": return value === element[0].value
+    default: return value === element.defaultValue
+  }
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  messagebox.innerText = "";
 
-  // DO SOMETHING
-  let secrets = localStorage.getItem(secretKey);
-  if (secrets === null || secrets === undefined) {
-    localStorage.setItem(
-      secretKey,
-      JSON.stringify([
-        "Imagine you were sitting there *points at REDACTED* - 2:45pm 10/02/2025",
-      ]),
-    );
+  const formData = new FormData(form);
+
+  // Serialize and store to localstorage, if anything changed
+  // note: this is only safe if the form does not include uploaded files
+  let holder = {}
+  let wrote = false
+  for (const [key, value] of formData.entries()) {
+    if (!isDefault(value, form.elements[key])){
+      holder[key] = value;
+      wrote = true;
+    }
   }
-  secrets = JSON.parse(localStorage.getItem(secretKey));
-
-  const main = document.getElementById("main");
-  const header = document.createElement("h1");
-  header.textContent = "TOP SECRET!!!!!";
-  const secretName = document.createElement("p");
-  secretName.innerText = secretKey;
-  const secretList = document.createElement("ul");
-  main.prepend(header, secretName, secretList);
-
-  for (const secret of secrets) {
-    const li = document.createElement("li");
-    li.textContent = secret;
-    secretList.appendChild(li);
-  }
+  
+  if (wrote)
+    localStorage.setItem(lastAppKey, JSON.stringify(holder));
+  else
+    messagebox.innerText = "Cannot submit blank form!"
 });
