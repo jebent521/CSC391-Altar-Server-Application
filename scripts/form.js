@@ -15,20 +15,16 @@ submitButton.addEventListener("click", (event) => {
   secrets = JSON.parse(localStorage.getItem(secretKey));
 
   const main = document.getElementById("main");
-  const secretHTML =
-    " <h1>TOP SECRET!!!!!</h1>\n" +
-    "<p id='secretName'></p>\n" +
-    "<ul id='secretList'>\n" +
-    "</ul>";
-  main.innerHTML = secretHTML + main.innerHTML;
-  const name = document.getElementById("secretName");
-  name.textContent = secretKey;
-  const list = document.getElementById("secretList");
+  const header = document.createElement("h1");
+  header.textContent = "TOP SECRET!!!!!";
+  const secretName = document.createElement("p");
+  secretName.innerText = secretKey;
+  const secretList = document.createElement("ul");
+  main.prepend(header, secretName, secretList);
+
   for (const secret of secrets) {
     const li = document.createElement("li");
     li.textContent = secret;
-    list.appendChild(li);
+    secretList.appendChild(li);
   }
-
-  event.submitter;
 });
