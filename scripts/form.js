@@ -3,6 +3,33 @@ const lastAppKey = "AltarServerApp/lastApplication";
 const messagebox = document.getElementById("buttonMessage");
 const form = document.getElementById("application");
 
+/**
+ * promise list of profane words read from a JSON file on the internet
+*/
+const profanity = fetch(
+  "https://raw.githubusercontent.com/zautumnz/profane-words/refs/heads/master/words.json",
+).then(async function (response) {
+  return await response.json();
+});
+
+async function checkProfanity(text) {
+  const cusses = await profanity;
+  let totalCount = 0;
+  for (const cuss of cusses) {
+    const escaped = cuss.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(escaped, 'gi');
+    const matches = text.match(regex);
+    if (matches) {
+      totalCount += matches.length;
+    }
+  }
+
+  if (totalCount == 0) return null;
+  if (totalCount <= 3) return "Watch your profanity";
+  if (totalCount <= 5) return "You better clean up your language there buster";
+  return "<img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2lsY3lqN2hpYjMxMDRjNWdseThmdWtzbDl5Zjk0bnlwcDNzanNwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4vYksifnc7Sw/giphy.gif\">";
+}
+
 document.getElementById("loadLastBtn").addEventListener("click", () => {
   const formDataStr = localStorage.getItem(lastAppKey);
   if (formDataStr === null) {
@@ -12,7 +39,7 @@ document.getElementById("loadLastBtn").addEventListener("click", () => {
 
   messagebox.innerText = "";
   const formData = JSON.parse(formDataStr);
-  form.reset()
+  form.reset();
   for (const [key, value] of Object.entries(formData)) {
     const input = form.elements[key];
     switch (input.type) {
@@ -63,4 +90,21 @@ form.addEventListener("submit", (event) => {
 
   if (wrote) localStorage.setItem(lastAppKey, JSON.stringify(holder));
   else messagebox.innerText = "Cannot submit blank form!";
+});
+
+document.querySelectorAll('.form-control').forEach(textbox => {
+  textbox.addEventListener('input', async function (event) {
+    const message = await checkProfanity(event.target.value);
+    const sibling = textbox.nextElementSibling;
+    if (sibling && sibling.classList.contains("profanity-warning")) {
+      sibling.innerHTML = message
+    }
+
+    else {
+      const feedback = document.createElement('div');
+      feedback.className = "text-warning profanity-warning";
+      feedback.innerHTML = message;
+      textbox.after(feedback);
+    }
+  });
 });
