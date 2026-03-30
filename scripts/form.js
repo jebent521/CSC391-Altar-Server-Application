@@ -24,7 +24,7 @@ async function checkProfanity(text) {
     }
   }
 
-  if (totalCount == 0) return null;
+  if (totalCount === 0) return null;
   if (totalCount <= 3) return "Watch your profanity";
   if (totalCount <= 5) return "You better clean up your language there buster";
   return '<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2lsY3lqN2hpYjMxMDRjNWdseThmdWtzbDl5Zjk0bnlwcDNzanNwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4vYksifnc7Sw/giphy.gif">';
