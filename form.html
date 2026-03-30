@@ -48,33 +48,43 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main id="main" class="container">
       <h1>Altar Server Applications</h1>
+      <button class="btn btn-primary" id="loadLastBtn">
+        Load Last Application
+      </button>
+      <button class="btn btn-primary" id="resetBtn">Reset Form</button>
+      <p id="buttonMessage"></p>
       <article>
-        <form>
+        <form id="application">
           <fieldset>
             <legend>
-              <h4>Please enter your information</h4>
+              <h4 class="pt-4">Please enter your information</h4>
             </legend>
 
             <div class="form-floating mb-3">
-              <input type="text" id="name" class="form-control" />
+              <input type="text" id="name" name="name" class="form-control" />
               <label for="name">Enter your name</label>
             </div>
 
             <div class="form-floating mb-3">
-              <input type="email" id="email" class="form-control" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
               <label for="email">Enter your email</label>
             </div>
 
             <div class="form-floating mb-3">
-              <input type="tel" id="phone" class="form-control" />
+              <input type="tel" id="phone" name="phone" class="form-control" />
               <label for="phone">Enter your phone number</label>
             </div>
 
             <div class="mb-3">
               <label for="year">Enter your academic year: </label>
-              <select class="form-select" id="year">
+              <select class="form-select" id="year" name="year">
                 <option>--Please choose an option--</option>
                 <option value="freshman">Freshman</option>
                 <option value="sophomore">Sophomore</option>
@@ -91,7 +101,11 @@
             </legend>
             <div class="mb-3">
               <label for="prior-serving">Have you ever served? </label>
-              <select class="form-select" id="prior-serving">
+              <select
+                class="form-select"
+                id="prior-serving"
+                name="prior-serving"
+              >
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
               </select>
@@ -101,7 +115,11 @@
               <label for="prior-serving-fus">
                 Have you ever served at Franciscan University?
               </label>
-              <select class="form-select" id="prior-serving-fus">
+              <select
+                class="form-select"
+                id="prior-serving-fus"
+                name="prior-serving-fus"
+              >
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
               </select>
@@ -111,7 +129,11 @@
               <label for="prior-serving-tlm">
                 Have you ever served the Traditional Latin Mass?
               </label>
-              <select class="form-select" id="prior-serving-tlm">
+              <select
+                class="form-select"
+                id="prior-serving-tlm"
+                name="prior-serving-tlm"
+              >
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
                 <option value="learn">No, but I would like to learn</option>
@@ -122,7 +144,11 @@
               <label for="prior-serving-rites">
                 Have you ever served for other rites?
               </label>
-              <select class="form-select" id="prior-serving-rites">
+              <select
+                class="form-select"
+                id="prior-serving-rites"
+                name="prior-serving-rites"
+              >
                 <option value="no">No</option>
                 <option value="yes">Yes</option>
                 <option value="learn">No, but I would like to learn</option>
@@ -134,7 +160,11 @@
                 (If applicable) please specify any other rites for which you've
                 served.
               </label>
-              <textarea class="form-control" id="other-rites"></textarea>
+              <textarea
+                class="form-control"
+                id="other-rites"
+                name="other-rites"
+              ></textarea>
             </div>
           </fieldset>
 
@@ -148,226 +178,299 @@
               before Mass starts on Sundays.
             </small>
             <div class="d-flex flex-wrap column-gap-3">
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Monday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="mo-6"
-                  /><label class="form-check-label" for="mo-6">6:30 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="mo-8"
-                  /><label class="form-check-label" for="mo-8">8:00 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="mo-12"
-                  /><label class="form-check-label" for="mo-12">12:05 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="mo-4"
-                  /><label class="form-check-label" for="mo-4">4:45 PM</label>
-                </div>
-              </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Tuesday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="tu-6"
-                  /><label class="form-check-label" for="tu-6">6:30 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="tu-8"
-                  /><label class="form-check-label" for="tu-8">8:00 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="tu-12"
-                  /><label class="form-check-label" for="tu-12">12:05 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="tu-4"
-                  /><label class="form-check-label" for="tu-4">4:45 PM</label>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Monday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="mo-6"
+                      name="mo-6"
+                    />
+                    <label class="form-check-label" for="mo-6">6:30 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="mo-8"
+                      name="mo-8"
+                    />
+                    <label class="form-check-label" for="mo-8">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="mo-12"
+                      name="mo-12"
+                    />
+                    <label class="form-check-label" for="mo-12">12:05 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="mo-4"
+                      name="mo-4"
+                    />
+                    <label class="form-check-label" for="mo-4">4:45 PM</label>
+                  </div>
                 </div>
               </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Wednesday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="we-6"
-                  /><label class="form-check-label" for="we-6">6:30 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="we-8"
-                  /><label class="form-check-label" for="we-8">8:00 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="we-12"
-                  /><label class="form-check-label" for="we-12">12:05 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="we-4"
-                  /><label class="form-check-label" for="we-4">4:45 PM</label>
-                </div>
-              </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Thursday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="th-6"
-                  /><label class="form-check-label" for="th-6">6:30 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="th-8"
-                  /><label class="form-check-label" for="th-8">8:00 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="th-12"
-                  /><label class="form-check-label" for="th-12">12:05 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="th-4"
-                  /><label class="form-check-label" for="th-4">4:45 PM</label>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Tuesday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tu-6"
+                      name="tu-6"
+                    />
+                    <label class="form-check-label" for="tu-6">6:30 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tu-8"
+                      name="tu-8"
+                    />
+                    <label class="form-check-label" for="tu-8">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tu-12"
+                    /><label class="form-check-label" for="tu-12"
+                      >12:05 PM</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tu-4"
+                      name="tu-4"
+                    />
+                    <label class="form-check-label" for="tu-4">4:45 PM</label>
+                  </div>
                 </div>
               </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Friday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="fr-6"
-                  /><label class="form-check-label" for="fr-6">6:30 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="fr-8"
-                  /><label class="form-check-label" for="fr-8">8:00 AM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="fr-12"
-                  /><label class="form-check-label" for="fr-12">12:05 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="fr-4"
-                  /><label class="form-check-label" for="fr-4">4:45 PM</label>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Wednesday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="we-6"
+                      name="we-6"
+                    />
+                    <label class="form-check-label" for="we-6">6:30 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="we-8"
+                      name="we-8"
+                    />
+                    <label class="form-check-label" for="we-8">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="we-12"
+                      name="we-12"
+                    />
+                    <label class="form-check-label" for="we-12">12:05 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="we-4"
+                      name="we-4"
+                    />
+                    <label class="form-check-label" for="we-4">4:45 PM</label>
+                  </div>
                 </div>
               </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Saturday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="sa-11"
-                  /><label class="form-check-label" for="sa-11">11:00 AM</label>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Thursday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="th-6"
+                      name="th-6"
+                    />
+                    <label class="form-check-label" for="th-6">6:30 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="th-8"
+                      name="th-8"
+                    />
+                    <label class="form-check-label" for="th-8">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="th-12"
+                      name="th-12"
+                    />
+                    <label class="form-check-label" for="th-12">12:05 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="th-4"
+                      name="th-4"
+                    />
+                    <label class="form-check-label" for="th-4">4:45 PM</label>
+                  </div>
                 </div>
               </div>
-              <div class="col pb-3">
-                <p class="m-0 fw-bold">Sunday</p>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="su-8a"
-                  /><label class="form-check-label" for="su-8a">8:00 AM</label>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Friday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="fr-6"
+                      name="fr-6"
+                    />
+                    <label class="form-check-label" for="fr-6">6:30 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="fr-8"
+                      name="fr-8"
+                    />
+                    <label class="form-check-label" for="fr-8">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="fr-12"
+                      name="fr-12"
+                    />
+                    <label class="form-check-label" for="fr-12">12:05 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="fr-4"
+                      name="fr-4"
+                    />
+                    <label class="form-check-label" for="fr-4">4:45 PM</label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="su-10"
-                  /><label class="form-check-label" for="su-10">10:00 AM</label>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Saturday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sa-11"
+                      name="sa-11"
+                    />
+                    <label class="form-check-label" for="sa-11">11:00 AM</label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="su-12"
-                  /><label class="form-check-label" for="su-12">12:00 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="su-4"
-                  /><label class="form-check-label" for="su-4">4:00 PM</label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="su-8p"
-                  /><label class="form-check-label" for="su-8p">8:00 PM</label>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title m-0 fw-bold">Sunday</p>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="su-8a"
+                      name="su-8a"
+                    />
+                    <label class="form-check-label" for="su-8a">8:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="su-10"
+                      name="su-10"
+                    />
+                    <label class="form-check-label" for="su-10">10:00 AM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="su-12"
+                      name="su-12"
+                    />
+                    <label class="form-check-label" for="su-12">12:00 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="su-4"
+                      name="su-4"
+                    />
+                    <label class="form-check-label" for="su-4">4:00 PM</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="su-8p"
+                      name="su-8p"
+                    />
+                    <label class="form-check-label" for="su-8p">8:00 PM</label>
+                  </div>
                 </div>
               </div>
             </div>
           </fieldset>
 
           <div>
-            <label for="additional"
-              >Any additional questions, comments, or concerns?</label
-            >
-            <textarea class="form-control" id="additional"></textarea>
+            <label for="additional">
+              Any additional questions, comments, or concerns?
+            </label>
+            <textarea class="form-control" id="additional" name="additional">
+            </textarea>
           </div>
 
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">
-              <h6 class="pt-2 px-2">Submit</h6>
+            <!-- Note: Because this is canceled by JS, the data isn't sent
+            anywhere. Fortunately, that sounds like a backend problem!
+            More seriously, if this was a real page I'd send the data somewhere
+            with JS, we just don't have anywhere to send it. -->
+            <button type="submit" class="btn btn-primary pt-2 px-2">
+              Submit
             </button>
           </div>
         </form>
       </article>
+
+      <script src="scripts/form.js"></script>
     </main>
 
     <footer class="bg-primary text-white p-4 mt-3">

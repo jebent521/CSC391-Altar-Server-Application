@@ -62,3 +62,37 @@ Team members and roles:
 - [x] Demonstrate visible form styling changes via variables. _AJ and JE_
 - [x] Deploy to `/srv/csc391web/team3/Bootstrap/` _AJ and JE_
 - [x] Submit pdf of webpage to Canvas _AJ and JE_
+
+# T07: JavaScript
+
+- Keep all previous HTML, CSS, and Bootstrap work intact.
+- Add JavaScript cleanly and intentionally (no in-line grossness please).
+- Do not break existing layout or styling.
+- Your page must feel meaningfully more interactive than T05/T06.
+
+- [X] Implement the required JavaScript fundamentals. _Currently assigned: DA, saved applications_
+  - [x] DOM manipulation (add, remove, and modify at least 1 element)
+  - [x] At least 2 event listeners (click, submit, hover, etc.)
+  - [X] Fetch and use data from a JSON file
+  - [x] Use variables, functions, and loops appropriately (at least 2)
+  - [x] Use local storage where it makes sense
+  - [x] Maintain clean separation of HTML, CSS, and JS
+- [X] Implement your assigned team-specific features. _Currently assigned: JE, swear word blocker_
+  - [X] Validate form inputs using JavaScript.
+  - [x] Display dynamic feedback messages.
+  - [x] Store submitted data in local storage.
+  - [x] Pre-fill form fields on reload. _saved application_ _DM_
+- [x] Give a Presentation on your assigned topics _JE_
+  - [x] At least 3 JavaScript topics, including those assigned to your team _JE_
+    - Dynamic content updates
+    - Form validation
+  - [x] Clear explanation of: _JE_
+    - [x] What the concept is _JE_
+    - [x] Why it is used _JE_
+    - [x] How it works (with code examples) _JE_
+  - [x] At least two live demos from your own page _JE_
+
+**Features we added:**
+
+- Form validation
+- Local storage form saving & reloading
