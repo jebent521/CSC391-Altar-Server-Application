@@ -33,9 +33,13 @@ async function checkProfanity(text) {
   return '<img alt="gif warning you to stop swearing" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2lsY3lqN2hpYjMxMDRjNWdseThmdWtzbDl5Zjk0bnlwcDNzanNwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4vYksifnc7Sw/giphy.gif">';
 }
 
-document.getElementById("loadLastBtn").addEventListener("click", () => {
+document
+  .getElementById("loadLastBtn")
+  .addEventListener("click", () => loadLastForm(true));
+
+function loadLastForm(verbose) {
   const formDataStr = localStorage.getItem(lastAppKey);
-  if (formDataStr === null) {
+  if (formDataStr === null && verbose) {
     messagebox.innerText = "No previous application found!";
     return;
   }
@@ -53,7 +57,7 @@ document.getElementById("loadLastBtn").addEventListener("click", () => {
         input.value = value;
     }
   }
-});
+}
 
 document.getElementById("resetBtn").addEventListener("click", () => {
   messagebox.innerText = "";
@@ -117,3 +121,6 @@ document.querySelectorAll(".form-control").forEach((textbox) => {
     }
   });
 });
+
+// The following runs immediately, not as a callback
+loadLastForm(false);
