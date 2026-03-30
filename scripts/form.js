@@ -74,7 +74,7 @@ function isDefault(value, element) {
   }
 }
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
   messagebox.innerText = "";
 
@@ -84,11 +84,19 @@ form.addEventListener("submit", (event) => {
   // note: this is only safe if the form does not include uploaded files
   let holder = {};
   let wrote = false;
+  let profane = false;
   for (const [key, value] of formData.entries()) {
+    profane |= (await checkProfanity(value)) !== null;
+
     if (!isDefault(value, form.elements[key])) {
       holder[key] = value;
       wrote = true;
     }
+  }
+
+  if (profane) {
+    messagebox.innerText = "Cannot submit profane form!";
+    return;
   }
 
   if (wrote) localStorage.setItem(lastAppKey, JSON.stringify(holder));
