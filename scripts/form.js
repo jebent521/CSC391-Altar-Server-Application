@@ -24,6 +24,9 @@ async function checkProfanity(text) {
     }
   }
 
+  // NOTE: Some profanity matches multiple words in the list, and are double-
+  // counted or more. This isn't an issue, since precisely which message the
+  // user gets doesn't really matter.
   if (totalCount === 0) return null;
   if (totalCount <= 3) return "Watch your profanity";
   if (totalCount <= 5) return "You better clean up your language there buster";
