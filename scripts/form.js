@@ -38,15 +38,16 @@ document
   .addEventListener("click", () => loadLastForm(true));
 
 function loadLastForm(verbose) {
+  // Load saved data, if present
   const formDataStr = localStorage.getItem(lastAppKey);
   if (formDataStr === null && verbose) {
     messagebox.innerText = "No previous application found!";
     return;
   }
-
-  messagebox.innerText = "";
   const formData = JSON.parse(formDataStr);
-  form.reset();
+  
+  // Reset and reload the form.
+  reset();
   for (const [key, value] of Object.entries(formData)) {
     const input = form.elements[key];
     switch (input.type) {
@@ -59,9 +60,16 @@ function loadLastForm(verbose) {
   }
 }
 
-document.getElementById("resetBtn").addEventListener("click", () => {
+function reset() {
   messagebox.innerText = "";
   form.reset();
+  for (const element of form.elements) {
+    setFeedback(element, "");
+  }
+}
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  reset();
 });
 
 /**
@@ -107,18 +115,22 @@ form.addEventListener("submit", async (event) => {
   else messagebox.innerText = "Cannot submit blank form!";
 });
 
+function setFeedback(textbox, message) {
+  const sibling = textbox.nextElementSibling;
+  if (sibling && sibling.classList.contains("profanity-warning")) {
+    sibling.innerHTML = message;
+  } else {
+    const feedback = document.createElement("div");
+    feedback.className = "text-warning profanity-warning";
+    feedback.innerHTML = message;
+    textbox.after(feedback);
+  }
+}
+
 document.querySelectorAll(".form-control").forEach((textbox) => {
   textbox.addEventListener("input", async function (event) {
     const message = await checkProfanity(event.target.value);
-    const sibling = textbox.nextElementSibling;
-    if (sibling && sibling.classList.contains("profanity-warning")) {
-      sibling.innerHTML = message;
-    } else {
-      const feedback = document.createElement("div");
-      feedback.className = "text-warning profanity-warning";
-      feedback.innerHTML = message;
-      textbox.after(feedback);
-    }
+    setFeedback(textbox, message);
   });
 });
 
