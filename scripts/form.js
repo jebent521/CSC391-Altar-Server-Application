@@ -38,14 +38,15 @@ document
   .addEventListener("click", () => loadLastForm(true));
 
 function loadLastForm(verbose) {
+  // Load saved data, if present
   const formDataStr = localStorage.getItem(lastAppKey);
   if (formDataStr === null && verbose) {
     messagebox.innerText = "No previous application found!";
     return;
   }
-
-  messagebox.innerText = "";
   const formData = JSON.parse(formDataStr);
+  
+  // Reset and reload the form.
   reset();
   for (const [key, value] of Object.entries(formData)) {
     const input = form.elements[key];
